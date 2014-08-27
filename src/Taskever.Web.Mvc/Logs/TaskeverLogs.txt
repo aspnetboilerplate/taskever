@@ -1,0 +1,693 @@
+DEBUG 2014-07-18 23:36:39,995 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-07-18 23:36:40,504 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,505 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,678 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,705 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,705 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,708 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,708 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,708 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,709 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,751 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,755 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,796 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,892 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,893 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,895 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,895 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,897 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-18 23:36:40,904 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-07-20 16:53:55,290 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-07-20 16:54:07,144 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,145 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,348 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,385 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,385 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,388 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,388 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,389 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,389 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,485 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,490 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,533 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,715 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,717 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,719 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,719 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,721 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:54:07,766 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-07-20 16:56:04,839 [6    ] Taskever.Tasks.TaskAppService            - Creaded [Task 2016]
+DEBUG 2014-07-20 16:59:35,040 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-07-20 16:59:35,539 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,540 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,716 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,743 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,743 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,746 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,746 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,746 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,747 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,790 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,794 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,835 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,926 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,928 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,930 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,930 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,931 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 16:59:35,939 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-07-20 17:01:04,199 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-07-20 17:01:04,851 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:04,852 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,019 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,045 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,045 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,048 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,048 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,048 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,049 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,073 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,077 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,079 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,125 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,127 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,129 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,129 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,131 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:01:05,133 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-07-20 17:03:35,114 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-07-20 17:03:35,647 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:35,648 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:35,820 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:35,847 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:35,847 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:35,850 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:35,850 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:35,851 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:35,851 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:35,893 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:35,897 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:35,937 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:36,028 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:36,030 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:36,031 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:36,032 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:36,033 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:03:36,040 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-07-20 17:10:31,648 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-07-20 17:10:32,182 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,183 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,360 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,387 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,387 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,390 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,390 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,390 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,391 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,433 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,437 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,478 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,570 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,571 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,573 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,573 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,575 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:10:32,582 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-07-20 17:11:53,554 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-07-20 17:11:54,057 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,058 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,232 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,257 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,258 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,261 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,261 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,261 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,261 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,303 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,307 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,347 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,437 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,438 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,440 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,440 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,442 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:11:54,449 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-07-20 17:16:50,572 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-07-20 17:16:51,086 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,087 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,267 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,293 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,293 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,296 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,296 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,297 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,297 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,338 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,342 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,382 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.2.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,471 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,473 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,474 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,475 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,476 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-07-20 17:16:51,483 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-14 22:31:11,357 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-14 22:31:14,429 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,430 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,610 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,639 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,640 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,643 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,643 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,643 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,643 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,690 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,694 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,738 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,842 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,874 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,876 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,876 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,878 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:31:14,895 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-14 22:33:44,814 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-14 22:33:45,325 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,326 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,502 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,528 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,528 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,531 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,531 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,531 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,531 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,573 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,577 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,617 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,708 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,709 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,711 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,711 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,713 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:33:45,728 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-14 22:34:46,350 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-14 22:34:47,002 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,003 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,171 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,196 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,197 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,200 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,200 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,200 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,202 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,226 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,230 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,231 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,280 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,281 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,283 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,284 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,285 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-14 22:34:47,287 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-15 21:30:15,875 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-15 21:30:16,894 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:16,895 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,067 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,094 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,094 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,098 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,099 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,099 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,099 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,143 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,146 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,187 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,315 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,317 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,318 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,319 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,320 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:30:17,338 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-15 21:32:07,415 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-15 21:32:07,916 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:07,917 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,090 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,118 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,119 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,122 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,122 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,122 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,123 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,166 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,170 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,210 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,302 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,304 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,306 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,306 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,307 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:32:08,324 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-15 21:35:41,313 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-15 21:35:41,857 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:41,858 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,041 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,068 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,068 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,072 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,072 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,072 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,072 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,115 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,119 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,159 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,272 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,275 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,279 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,279 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,282 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:35:42,302 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-15 21:38:02,316 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-15 21:38:02,830 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:02,831 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,008 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,034 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,035 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,038 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,038 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,038 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,038 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,084 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,088 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,130 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,227 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,229 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,231 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,231 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,233 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:38:03,250 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-15 21:42:00,522 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-15 21:42:01,018 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,019 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,187 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,213 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,213 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,216 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,216 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,216 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,217 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,259 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,263 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,302 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,392 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,393 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,395 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,395 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,396 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:42:01,411 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-15 21:49:27,544 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-15 21:49:28,062 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,063 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,235 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,261 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,261 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,264 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,264 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,265 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,265 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,308 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,312 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,353 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,444 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,446 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,448 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,448 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,449 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:49:28,464 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-15 21:52:46,104 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-15 21:52:46,651 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:46,652 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:46,825 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:46,851 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:46,851 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:46,854 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:46,854 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:46,855 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:46,855 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:46,896 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:46,900 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:46,941 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:47,030 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:47,032 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:47,034 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:47,034 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:47,036 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:52:47,052 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-15 21:59:39,818 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-15 21:59:40,500 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,501 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,670 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,696 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,696 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,699 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,699 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,699 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,700 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,724 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,728 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,730 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,783 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,785 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,787 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,787 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,789 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-15 21:59:40,791 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-16 14:04:10,202 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 14:04:14,282 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,283 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,456 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,482 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,482 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,485 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,485 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,486 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,486 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,536 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,540 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,581 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,791 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,792 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,794 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,794 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,796 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:04:14,813 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+ERROR 2014-08-16 14:04:47,151 [15   ] Default                                  - Invalid user name or password!
+Abp.UI.UserFriendlyException: Invalid user name or password!
+   at Taskever.Web.Mvc.Controllers.AccountController.<Login>d__4.MoveNext() in d:\Halil\GitHub\aspnetboilerplate\src\Taskever\Taskever.Web.Mvc\Controllers\AccountController.cs:line 66
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2014-08-16 14:08:59,419 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 14:09:00,254 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,255 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,439 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,466 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,466 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,470 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,470 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,470 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,470 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,514 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,518 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,560 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,652 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,654 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,655 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,656 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,657 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 14:09:00,673 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-16 17:47:54,704 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 17:47:55,268 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,269 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,461 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,490 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,490 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,493 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,493 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,493 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,494 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,539 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,544 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,588 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,685 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,687 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,689 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,689 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,690 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:47:55,706 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-16 17:53:53,297 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 17:53:53,833 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:53,834 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,023 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,049 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,050 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,053 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,053 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,054 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,054 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,099 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,103 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,146 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,241 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,243 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,245 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,245 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,246 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:53:54,263 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-16 17:55:50,812 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 17:55:51,466 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,467 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,637 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,663 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,663 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,666 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,667 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,667 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,667 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,692 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,696 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,697 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,745 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,746 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,748 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,748 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,750 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:55:51,752 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-16 17:59:02,573 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 17:59:03,095 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,096 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,265 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,291 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,291 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,294 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,294 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,295 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,295 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,336 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,340 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,380 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,469 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,471 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,472 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,473 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,474 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 17:59:03,489 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-16 18:02:53,018 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 18:02:53,672 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,673 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,839 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,864 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,865 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,868 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,868 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,868 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,868 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,892 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,896 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,897 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,945 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,947 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,949 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,949 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,950 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:02:53,953 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-16 18:37:16,477 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 18:52:19,808 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 18:53:22,634 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 18:53:22,828 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:22,829 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:22,831 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:22,831 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:22,834 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:22,837 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:22,837 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:22,837 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:22,837 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:22,839 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:22,839 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:22,842 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:23,233 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:23,235 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:23,237 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:23,237 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:23,238 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:53:23,289 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-16 18:57:23,445 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 18:58:53,848 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:53,982 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:53,983 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:53,983 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,019 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,020 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,053 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,057 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,057 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,071 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,111 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,132 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,186 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,338 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,360 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,361 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,416 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 18:58:54,441 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-16 19:02:23,811 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 19:04:25,148 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 19:04:33,587 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:33,588 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:33,590 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:33,590 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:33,593 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:33,595 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:33,596 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:33,596 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:33,596 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:33,603 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:33,603 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:33,606 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:33,997 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:33,999 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:34,000 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:34,000 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:34,001 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:34,033 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-16 19:04:49,846 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 19:04:50,233 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,234 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,235 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,236 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,238 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,241 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,242 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,242 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,242 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.0.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,248 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,248 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,251 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,633 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,634 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,636 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,636 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,637 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 19:04:50,666 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-16 23:01:14,351 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 23:01:14,484 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.1.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,485 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.1.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,487 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.1.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,487 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,490 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,492 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,493 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,493 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,493 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,499 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.1.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,499 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.1.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,501 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.1.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,911 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,912 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,914 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,914 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:14,915 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:01:15,001 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-16 23:04:54,550 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-16 23:04:54,663 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.1.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:54,664 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.1.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:54,666 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.1.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:54,666 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:54,669 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:54,672 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:54,672 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:54,672 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:54,672 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:54,678 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.1.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:54,679 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.1.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:54,681 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.1.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:55,085 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:55,087 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:55,088 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:55,089 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:55,090 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-16 23:04:55,123 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-27 22:43:49,321 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-27 22:43:49,439 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:43:49,439 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:43:49,441 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:43:49,441 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:43:49,444 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:43:49,447 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:43:49,448 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:43:49,448 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:43:49,448 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:49:13,959 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-27 22:49:14,071 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:49:14,071 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:49:14,073 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:49:14,073 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:49:14,076 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:49:14,079 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:49:14,079 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:49:14,080 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 22:49:14,080 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:20,855 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-27 23:12:20,974 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:20,975 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:20,978 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:20,978 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:20,981 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:20,984 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:20,984 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:20,984 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:20,985 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:20,991 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:20,991 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:20,994 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:21,412 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:21,414 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:21,415 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:21,416 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:21,417 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:12:21,449 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
+DEBUG 2014-08-27 23:13:18,110 [1    ] Abp.Modules.AbpModuleLoader              - Loading Abp modules...
+DEBUG 2014-08-27 23:13:18,226 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Application.AbpApplicationModule, Abp.Application, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,227 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.AbpStartupModule, Abp, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,229 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Infrastructure.NHibernate.AbpNHibernateModule, Abp.Infrastructure.NHibernate, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,230 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.AbpModulesCoreApplicationModule, Abp.Modules.Core.Application, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,232 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Modules.Core.AbpModulesCoreModule, Abp.Modules.Core, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,235 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreInfrastructureNHibernateModule, Abp.Modules.Core.Infrastructure.NHibernate, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,236 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Startup.AbpModulesCoreWebApiModule, Abp.Modules.Core.Web.Api, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,236 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpCoreWebModule, Abp.Modules.Core.Web, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,236 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Modules.Core.Mvc.Startup.AbpModulesCoreWebMvcModule, Abp.Modules.Core.Web.Mvc, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,243 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Startup.Web.AbpWebModule, Abp.Web, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,244 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.WebApi.Startup.AbpWebApiModule, Abp.Web.Api, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,246 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Abp.Web.Mvc.Startup.AbpWebMvcModule, Abp.Web.Mvc, Version=0.3.1.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,657 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverAppModule, Taskever.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,659 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,660 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,660 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Startup.TaskeverWebApiModule, Taskever.Web.Api, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,662 [1    ] Abp.Modules.AbpModuleLoader              - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-08-27 23:13:18,703 [1    ] Abp.Modules.AbpModuleLoader              - 17 modules loaded.
