@@ -73,7 +73,7 @@ namespace Taskever.Web.Mvc.Controllers
                 returnUrl = Request.ApplicationPath;
             }
 
-            return Json(new AbpMvcAjaxResponse { TargetUrl = returnUrl });
+            return Json(new MvcAjaxResponse { TargetUrl = returnUrl });
         }
 
         private async Task SignInAsync(AbpUser user, bool isPersistent)
@@ -129,14 +129,14 @@ namespace Taskever.Web.Mvc.Controllers
 
             _userAppService.RegisterUser(input);
 
-            return Json(new AbpMvcAjaxResponse { TargetUrl = Url.Action("ActivationInfo") });
+            return Json(new MvcAjaxResponse { TargetUrl = Url.Action("ActivationInfo") });
         }
 
         public JsonResult SendPasswordResetLink(SendPasswordResetLinkInput input)
         {
             _userAppService.SendPasswordResetLink(input);
 
-            return Json(new AbpMvcAjaxResponse());
+            return Json(new MvcAjaxResponse());
         }
 
         [HttpGet]
@@ -162,13 +162,13 @@ namespace Taskever.Web.Mvc.Controllers
 
             _userAppService.ResetPassword(input);
 
-            return Json(new AbpMvcAjaxResponse { TargetUrl = Url.Action("Login") });
+            return Json(new MvcAjaxResponse { TargetUrl = Url.Action("Login") });
         }
 
         [Authorize]
         public JsonResult KeepSessionOpen()
         {
-            return Json(new AbpMvcAjaxResponse());
+            return Json(new MvcAjaxResponse());
         }
     }
 }

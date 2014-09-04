@@ -3,7 +3,7 @@ using System.Linq;
 using Abp.Application.Services;
 using Abp.Domain.Uow;
 using Abp.Events.Bus;
-using Abp.Events.Bus.Datas.Entities;
+using Abp.Events.Bus.Entities;
 using Abp.Mapping;
 using Abp.Security.Users;
 using Abp.UI;

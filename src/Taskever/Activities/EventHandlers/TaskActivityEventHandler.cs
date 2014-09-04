@@ -1,5 +1,5 @@
 ﻿using Abp.Dependency;
-using Abp.Events.Bus.Datas.Entities;
+using Abp.Events.Bus.Entities;
 using Abp.Events.Bus.Handlers;
 using Taskever.Security.Users;
 using Taskever.Tasks;

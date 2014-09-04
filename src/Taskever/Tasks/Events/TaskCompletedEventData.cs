@@ -1,4 +1,4 @@
-﻿using Abp.Events.Bus.Datas.Entities;
+﻿using Abp.Events.Bus.Entities;
 
 namespace Taskever.Tasks.Events
 {

@@ -45,7 +45,7 @@ namespace Taskever.Web.Mvc.Controllers
                     }
 
                     //Return response
-                    return Json(new AbpAjaxResponse(new
+                    return Json(new AjaxResponse(new
                                                         {
                                                             imageUrl = "/ProfileImages/" + fileName
                                                         }));
@@ -53,7 +53,7 @@ namespace Taskever.Web.Mvc.Controllers
             }
 
             //No file
-            return Json(new AbpAjaxResponse(false)); //TODO: Error message?
+            return Json(new AjaxResponse(false)); //TODO: Error message?
         }
 
         private string GenerateProfileImagePath(string fileExtension)
