@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Web.Mvc;
 using Abp.IO;
+using Abp.UI;
 using Abp.Users;
 using Abp.Users.Dto;
 using Abp.Web.Models;
@@ -28,6 +29,18 @@ namespace Taskever.Web.Mvc.Controllers
                 var uploadfile = Request.Files[0];
                 if (uploadfile != null)
                 {
+                    var extension = Path.GetExtension(uploadfile.FileName).ToLower();
+                    
+                    if (!(extension == ".jpg" || extension == ".jpeg" || extension == ".png" || extension == ".gif" || extension == ".bmp"))
+                    {
+                        throw new UserFriendlyException("Unsupported profile image type");
+                    }
+
+                    if (uploadfile.ContentLength > 101400)
+                    {
+                        throw new UserFriendlyException("Unsupported file size");
+                    }
+
                     //Save uploaded file
                     var tempPath = GenerateProfileImagePath(Path.GetExtension(uploadfile.FileName));
                     FileHelper.DeleteIfExists(tempPath);
@@ -46,9 +59,9 @@ namespace Taskever.Web.Mvc.Controllers
 
                     //Return response
                     return Json(new AjaxResponse(new
-                                                        {
-                                                            imageUrl = "/ProfileImages/" + fileName
-                                                        }));
+                    {
+                        imageUrl = "/ProfileImages/" + fileName
+                    }));
                 }
             }
 
