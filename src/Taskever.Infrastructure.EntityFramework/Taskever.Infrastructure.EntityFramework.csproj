@@ -135,8 +135,9 @@
     </Reference>
     <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Linq.Dynamic.Core, Version=1.0.18.0, Culture=neutral, PublicKeyToken=0f07ec44de6ac832, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Linq.Dynamic.Core.1.0.18\lib\net46\System.Linq.Dynamic.Core.dll</HintPath>
+    <Reference Include="System.Linq.Dynamic.Core, Version=1.0.19.0, Culture=neutral, PublicKeyToken=0f07ec44de6ac832, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.Core.1.0.19\lib\net46\System.Linq.Dynamic.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
@@ -208,9 +209,9 @@
     <Compile Include="Data\Repositories\NHibernate\TaskeverUserRepository.cs" />
     <Compile Include="Data\Repositories\NHibernate\TaskRepository.cs" />
     <Compile Include="Data\Repositories\NHibernate\UserFollowedActivityRepository.cs" />
-    <Compile Include="Migrations\201909020715291_Upgrated_To_ABP_4_8_0.cs" />
-    <Compile Include="Migrations\201909020715291_Upgrated_To_ABP_4_8_0.Designer.cs">
-      <DependentUpon>201909020715291_Upgrated_To_ABP_4_8_0.cs</DependentUpon>
+    <Compile Include="Migrations\201909021231039_Initial_Migration.cs" />
+    <Compile Include="Migrations\201909021231039_Initial_Migration.Designer.cs">
+      <DependentUpon>201909021231039_Initial_Migration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -230,8 +231,8 @@
     <Content Include="Dynamic Expressions.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201909020715291_Upgrated_To_ABP_4_8_0.resx">
-      <DependentUpon>201909020715291_Upgrated_To_ABP_4_8_0.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201909021231039_Initial_Migration.resx">
+      <DependentUpon>201909021231039_Initial_Migration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

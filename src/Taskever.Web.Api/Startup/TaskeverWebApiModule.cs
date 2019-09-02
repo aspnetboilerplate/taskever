@@ -1,5 +1,6 @@
 using Abp.Configuration.Startup;
 using Abp.Modules;
+using Abp.WebApi;
 using Taskever.Activities;
 using Taskever.Friendships;
 using Taskever.Tasks;
@@ -8,6 +9,7 @@ using Taskever.Web.Dependency.Installers;
 
 namespace Taskever.Web.Startup
 {
+    [DependsOn(typeof(AbpWebApiModule))]
     public class TaskeverWebApiModule : AbpModule
     {
         public override void Initialize()

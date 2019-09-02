@@ -5,12 +5,13 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using Abp.Modules;
 using Abp.Web.Mvc.Resources;
+using Abp.WebApi;
 using Taskever.Startup;
 using Taskever.Tasks;
 
 namespace Taskever.Web.Mvc
 {
-    [DependsOn(typeof(TaskeverDataModule))]
+    [DependsOn(typeof(TaskeverDataModule),typeof(AbpWebApiModule),typeof(TaskeverCoreModule))]
     public class TaskeverWebMvcModule : AbpModule
     {
         public override void Initialize()

@@ -858,3 +858,1336 @@ FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete conf
    at Abp.AbpBootstrapper.Initialize()
 
 
+DEBUG 2019-09-02 10:58:30,716 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 10:58:30,725 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 10:58:30,728 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 10:58:30,730 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 10:58:30,730 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 10:58:30,730 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 10:58:30,732 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 10:58:31,830 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 11:00:43,639 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 11:00:43,648 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 11:00:43,651 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 11:00:43,652 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 11:00:43,652 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 11:00:43,653 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 11:00:43,654 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 11:00:44,776 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 11:04:12,642 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 11:04:12,651 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 11:04:12,654 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 11:04:12,656 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 11:04:12,656 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 11:04:12,656 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 11:04:12,658 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 11:04:13,765 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 11:35:20,063 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 11:35:20,073 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 11:35:20,077 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 11:35:20,078 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 11:35:20,079 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 11:35:20,079 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 11:35:20,081 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 11:35:21,195 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 13:05:11,066 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 13:05:11,075 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 13:05:11,078 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:05:11,080 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:05:11,080 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:05:11,080 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:05:11,082 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 13:05:12,259 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 13:08:53,988 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 13:08:53,997 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 13:08:54,001 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:08:54,003 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:08:54,003 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:08:54,003 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:08:54,006 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 13:08:55,150 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 13:17:17,447 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 13:17:17,456 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 13:17:17,459 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:17:17,461 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:17:17,461 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:17:17,461 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:17:17,464 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 13:17:18,605 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 13:29:30,972 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 13:29:30,980 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 13:29:30,984 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:29:30,986 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:29:30,986 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:29:30,986 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:29:30,987 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 13:29:32,127 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 13:31:04,033 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 13:31:04,042 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 13:31:04,046 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:31:04,048 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:31:04,048 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:31:04,048 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:31:04,050 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 13:31:05,311 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 13:42:38,484 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 13:42:38,493 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 13:42:38,497 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:42:38,498 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:42:38,498 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:42:38,499 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:42:38,501 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+ERROR 2019-09-02 13:42:39,669 [1    ] NHibernate.Cfg.Configuration             - An association from the table TeActivities refers to an unmapped class: Taskever.Security.Users.TaskeverUser
+NHibernate.MappingException: An association from the table TeActivities refers to an unmapped class: Taskever.Security.Users.TaskeverUser
+FATAL 2019-09-02 13:42:39,676 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: An association from the table TeActivities refers to an unmapped class: Taskever.Security.Users.TaskeverUser
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.SecondPassCompileForeignKeys(Table table, ISet`1 done)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: An association from the table TeActivities refers to an unmapped class: Taskever.Security.Users.TaskeverUser
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.SecondPassCompileForeignKeys(Table table, ISet`1 done)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 13:45:22,867 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 13:45:22,877 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 13:45:22,880 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:45:22,882 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:45:22,882 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:45:22,882 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:45:22,884 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 13:45:23,192 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.InvalidOperationException: Tried to add property 'CreationTime' when already added.
+   at FluentNHibernate.MappingModel.MappedMembers.AddProperty(PropertyMapping property)
+   at FluentNHibernate.MappingModel.ClassBased.ClassMappingBase.AddProperty(PropertyMapping property)
+   at FluentNHibernate.Mapping.ClassMap`1.FluentNHibernate.IMappingProvider.GetClassMapping()
+   at FluentNHibernate.PersistenceModel.BuildSeparateMappings(Action`1 add)
+   at FluentNHibernate.PersistenceModel.BuildMappings()
+   at FluentNHibernate.PersistenceModel.EnsureMappingsBuilt()
+   at FluentNHibernate.PersistenceModel.Configure(Configuration cfg)
+   at FluentNHibernate.Cfg.MappingConfiguration.Apply(Configuration cfg)
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildConfiguration()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildConfiguration()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.InvalidOperationException: Tried to add property 'CreationTime' when already added.
+   at FluentNHibernate.MappingModel.MappedMembers.AddProperty(PropertyMapping property)
+   at FluentNHibernate.MappingModel.ClassBased.ClassMappingBase.AddProperty(PropertyMapping property)
+   at FluentNHibernate.Mapping.ClassMap`1.FluentNHibernate.IMappingProvider.GetClassMapping()
+   at FluentNHibernate.PersistenceModel.BuildSeparateMappings(Action`1 add)
+   at FluentNHibernate.PersistenceModel.BuildMappings()
+   at FluentNHibernate.PersistenceModel.EnsureMappingsBuilt()
+   at FluentNHibernate.PersistenceModel.Configure(Configuration cfg)
+   at FluentNHibernate.Cfg.MappingConfiguration.Apply(Configuration cfg)
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildConfiguration()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildConfiguration()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 13:49:17,113 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 13:49:17,128 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 13:49:17,133 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:49:17,134 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:49:17,135 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:49:17,135 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:49:17,137 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 13:49:18,283 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 13:54:56,031 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 13:54:56,040 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 13:54:56,043 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:54:56,045 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:54:56,045 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:54:56,045 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:54:56,047 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 13:54:57,193 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 13:58:16,838 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 13:58:16,847 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 13:58:16,850 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:58:16,852 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:58:16,852 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:58:16,852 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:58:16,854 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+DEBUG 2019-09-02 13:58:41,873 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 13:58:41,883 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 13:58:41,887 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:58:41,888 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:58:41,889 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:58:41,889 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:58:41,891 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+DEBUG 2019-09-02 13:59:20,894 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 13:59:20,903 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 13:59:20,907 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:59:20,908 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:59:20,908 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:59:20,908 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 13:59:20,910 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+DEBUG 2019-09-02 14:02:08,586 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 14:02:08,595 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 14:02:08,599 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:02:08,600 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:02:08,601 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:02:08,601 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:02:08,603 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 14:02:18,815 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 14:04:13,990 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 14:04:14,000 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 14:04:14,006 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:04:14,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:04:14,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:04:14,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:04:14,012 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 14:04:23,561 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 14:05:06,907 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 14:05:06,916 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 14:05:06,920 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:05:06,922 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:05:06,922 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:05:06,922 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:05:06,924 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+FATAL 2019-09-02 14:05:14,746 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: Association references unmapped class: Abp.Authorization.Permission
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(ICollectionPropertiesMapping collectionMapping, Collection model, IDictionary`2 persistentClasses, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.<>c__DisplayClass21_0.<AddCollectionSecondPass>b__0(IDictionary`2 persistentClasses)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 14:06:38,544 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 14:06:38,553 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 14:06:38,556 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:06:38,558 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:06:38,558 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:06:38,558 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:06:38,560 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+ERROR 2019-09-02 14:06:46,276 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2019-09-02 14:06:57,644 [1    ] Abp.Localization.LocalizationManager     - Initializing 1 localization sources.
+DEBUG 2019-09-02 14:06:57,705 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-02 14:06:57,875 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-09-02 14:07:29,113 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 14:07:29,122 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 14:07:29,126 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:07:29,127 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:07:29,128 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:07:29,128 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:07:29,130 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+ERROR 2019-09-02 14:07:37,017 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2019-09-02 14:07:43,896 [1    ] Abp.Localization.LocalizationManager     - Initializing 1 localization sources.
+DEBUG 2019-09-02 14:07:43,949 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-02 14:07:44,120 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-09-02 14:12:14,732 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 14:12:14,742 [1    ] Abp.Modules.AbpModuleManager             - Found 7 ABP modules in total.
+DEBUG 2019-09-02 14:12:14,746 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:12:14,748 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:12:14,748 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:12:14,748 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:12:14,748 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:12:14,748 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:12:14,748 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:12:14,750 [1    ] Abp.Modules.AbpModuleManager             - 7 modules loaded.
+ERROR 2019-09-02 14:12:27,980 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2019-09-02 14:12:35,500 [1    ] Abp.Localization.LocalizationManager     - Initializing 2 localization sources.
+DEBUG 2019-09-02 14:12:35,552 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-02 14:12:35,558 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-09-02 14:12:35,729 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+WARN  2019-09-02 14:12:36,096 [12   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2019-09-02 14:12:36,126 [12   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2019-09-02 14:12:36,602 [14   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2019-09-02 14:12:36,603 [14   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+DEBUG 2019-09-02 14:13:33,168 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 14:13:33,178 [1    ] Abp.Modules.AbpModuleManager             - Found 7 ABP modules in total.
+DEBUG 2019-09-02 14:13:33,181 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:13:33,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:13:33,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:13:33,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:13:33,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:13:33,184 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:13:33,184 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:13:33,186 [1    ] Abp.Modules.AbpModuleManager             - 7 modules loaded.
+ERROR 2019-09-02 14:13:34,522 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2019-09-02 14:13:35,249 [1    ] Abp.Localization.LocalizationManager     - Initializing 2 localization sources.
+DEBUG 2019-09-02 14:13:35,301 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-02 14:13:35,307 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-09-02 14:13:35,478 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+WARN  2019-09-02 14:13:36,334 [9    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2019-09-02 14:13:36,362 [9    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+DEBUG 2019-09-02 14:21:05,939 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 14:21:05,948 [1    ] Abp.Modules.AbpModuleManager             - Found 7 ABP modules in total.
+DEBUG 2019-09-02 14:21:05,952 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:21:05,954 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:21:05,954 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:21:05,954 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:21:05,954 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:21:05,954 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:21:05,954 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:21:05,956 [1    ] Abp.Modules.AbpModuleManager             - 7 modules loaded.
+ERROR 2019-09-02 14:21:07,212 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2019-09-02 14:21:09,469 [1    ] Abp.Localization.LocalizationManager     - Initializing 2 localization sources.
+DEBUG 2019-09-02 14:21:09,519 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-02 14:21:09,525 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-09-02 14:21:09,699 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+WARN  2019-09-02 14:21:10,029 [8    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2019-09-02 14:21:10,057 [8    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+DEBUG 2019-09-02 14:24:29,749 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 14:24:29,759 [1    ] Abp.Modules.AbpModuleManager             - Found 7 ABP modules in total.
+DEBUG 2019-09-02 14:24:29,762 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:24:29,764 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:24:29,764 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:24:29,764 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:24:29,764 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:24:29,764 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:24:29,765 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:24:29,767 [1    ] Abp.Modules.AbpModuleManager             - 7 modules loaded.
+ERROR 2019-09-02 14:24:31,090 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2019-09-02 14:24:31,811 [1    ] Abp.Localization.LocalizationManager     - Initializing 2 localization sources.
+DEBUG 2019-09-02 14:24:31,863 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-02 14:24:31,869 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-09-02 14:24:32,023 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+WARN  2019-09-02 14:24:32,848 [9    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2019-09-02 14:24:32,875 [9    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+DEBUG 2019-09-02 14:25:25,477 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 14:25:25,488 [1    ] Abp.Modules.AbpModuleManager             - Found 7 ABP modules in total.
+DEBUG 2019-09-02 14:25:25,492 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:25:25,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:25:25,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:25:25,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:25:25,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:25:25,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:25:25,495 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:25:25,497 [1    ] Abp.Modules.AbpModuleManager             - 7 modules loaded.
+ERROR 2019-09-02 14:25:27,250 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2019-09-02 14:25:28,146 [1    ] Abp.Localization.LocalizationManager     - Initializing 2 localization sources.
+DEBUG 2019-09-02 14:25:28,208 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-02 14:25:28,214 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-09-02 14:25:28,381 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+WARN  2019-09-02 14:25:29,320 [10   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2019-09-02 14:25:29,358 [10   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+DEBUG 2019-09-02 14:44:52,333 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 14:44:52,342 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-09-02 14:44:52,347 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:44:52,348 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:44:52,348 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:44:52,349 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:44:52,349 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:44:52,349 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:44:52,349 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:44:52,349 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:44:52,349 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:44:52,349 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:44:52,351 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+ERROR 2019-09-02 14:44:53,658 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+FATAL 2019-09-02 14:44:54,501 [1    ] Abp.AbpBootstrapper                      - System.ArgumentNullException: Value cannot be null.
+Parameter name: value
+   at Abp.Zero.Configuration.AbpZeroEntityTypes.set_Tenant(Type value)
+   at Abp.Zero.AbpZeroCommonModule.FillMissingEntityTypes()
+   at Abp.Zero.AbpZeroCommonModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+System.ArgumentNullException: Value cannot be null.
+Parameter name: value
+   at Abp.Zero.Configuration.AbpZeroEntityTypes.set_Tenant(Type value)
+   at Abp.Zero.AbpZeroCommonModule.FillMissingEntityTypes()
+   at Abp.Zero.AbpZeroCommonModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+DEBUG 2019-09-02 14:50:03,444 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 14:50:03,453 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-09-02 14:50:03,458 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:50:03,459 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:50:03,459 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:50:03,459 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:50:03,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:50:03,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:50:03,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:50:03,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:50:03,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:50:03,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:50:03,462 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+ERROR 2019-09-02 14:50:12,078 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+FATAL 2019-09-02 14:50:12,857 [1    ] Abp.AbpBootstrapper                      - System.ArgumentNullException: Value cannot be null.
+Parameter name: value
+   at Abp.Zero.Configuration.AbpZeroEntityTypes.set_Tenant(Type value)
+   at Abp.Zero.AbpZeroCommonModule.FillMissingEntityTypes()
+   at Abp.Zero.AbpZeroCommonModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+System.ArgumentNullException: Value cannot be null.
+Parameter name: value
+   at Abp.Zero.Configuration.AbpZeroEntityTypes.set_Tenant(Type value)
+   at Abp.Zero.AbpZeroCommonModule.FillMissingEntityTypes()
+   at Abp.Zero.AbpZeroCommonModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+DEBUG 2019-09-02 14:53:33,952 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 14:53:33,961 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-09-02 14:53:33,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:53:33,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:53:33,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:53:33,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:53:33,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:53:33,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:53:33,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:53:33,968 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:53:33,968 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:53:33,968 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 14:53:33,970 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+ERROR 2019-09-02 14:53:42,349 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+FATAL 2019-09-02 14:53:43,190 [1    ] Abp.AbpBootstrapper                      - System.ArgumentNullException: Value cannot be null.
+Parameter name: value
+   at Abp.Zero.Configuration.AbpZeroEntityTypes.set_Tenant(Type value)
+   at Abp.Zero.AbpZeroCommonModule.FillMissingEntityTypes()
+   at Abp.Zero.AbpZeroCommonModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+System.ArgumentNullException: Value cannot be null.
+Parameter name: value
+   at Abp.Zero.Configuration.AbpZeroEntityTypes.set_Tenant(Type value)
+   at Abp.Zero.AbpZeroCommonModule.FillMissingEntityTypes()
+   at Abp.Zero.AbpZeroCommonModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+DEBUG 2019-09-02 15:01:41,924 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 15:01:41,933 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-09-02 15:01:41,938 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:01:41,939 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:01:41,939 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:01:41,939 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:01:41,940 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:01:41,940 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:01:41,940 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:01:41,940 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:01:41,940 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:01:41,940 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:01:41,942 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+ERROR 2019-09-02 15:01:47,886 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2019-09-02 15:01:58,077 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-09-02 15:01:58,129 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-02 15:01:58,135 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-09-02 15:01:58,151 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-09-02 15:01:58,151 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Taskever
+DEBUG 2019-09-02 15:01:58,491 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-09-02 15:04:30,927 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 15:04:30,937 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-09-02 15:04:30,941 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:04:30,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:04:30,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:04:30,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:04:30,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:04:30,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:04:30,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:04:30,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:04:30,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:04:30,944 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:04:30,946 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+ERROR 2019-09-02 15:04:32,242 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2019-09-02 15:04:38,847 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-09-02 15:04:38,904 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-02 15:04:38,911 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-09-02 15:04:38,930 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-09-02 15:04:38,930 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Taskever
+DEBUG 2019-09-02 15:04:39,215 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+ERROR 2019-09-02 15:04:40,095 [11   ] NHibernate.AdoNet.AbstractBatcher        - Could not execute query: SELECT taskeverte0_.Id as id1_4_0_ FROM AbpTenants taskeverte0_ WHERE taskeverte0_.Id=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpTenants'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+ClientConnectionId:81312d18-2bdf-4345-ba0c-8a321e277e93
+Error Number:208,State:1,Class:16
+WARN  2019-09-02 15:04:40,108 [11   ] NHibernate.Util.ADOExceptionReporter     - Invalid object name 'AbpTenants'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpTenants'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(DbCommand st, QueryParameters queryParameters, ISessionImplementor session, IResultTransformer forcedResultTransformer)
+ClientConnectionId:81312d18-2bdf-4345-ba0c-8a321e277e93
+Error Number:208,State:1,Class:16
+ERROR 2019-09-02 15:04:40,108 [11   ] NHibernate.Util.ADOExceptionReporter     - Invalid object name 'AbpTenants'.
+WARN  2019-09-02 15:04:40,112 [11   ] NHibernate.Util.ADOExceptionReporter     - Invalid object name 'AbpTenants'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpTenants'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(DbCommand st, QueryParameters queryParameters, ISessionImplementor session, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.LoadEntity(ISessionImplementor session, Object id, IType identifierType, Object optionalObject, String optionalEntityName, Object optionalIdentifier, IEntityPersister persister)
+ClientConnectionId:81312d18-2bdf-4345-ba0c-8a321e277e93
+Error Number:208,State:1,Class:16
+ERROR 2019-09-02 15:04:40,112 [11   ] NHibernate.Util.ADOExceptionReporter     - Invalid object name 'AbpTenants'.
+DEBUG 2019-09-02 15:07:37,771 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 15:07:37,780 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-09-02 15:07:37,785 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:07:37,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:07:37,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:07:37,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:07:37,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:07:37,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:07:37,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:07:37,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:07:37,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:07:37,788 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:07:37,790 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+ERROR 2019-09-02 15:07:39,042 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2019-09-02 15:07:41,515 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-09-02 15:07:41,566 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-02 15:07:41,572 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-09-02 15:07:41,588 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-09-02 15:07:41,588 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Taskever
+DEBUG 2019-09-02 15:07:41,911 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+ERROR 2019-09-02 15:07:42,748 [9    ] NHibernate.AdoNet.AbstractBatcher        - Could not execute query: SELECT taskeverte0_.Id as id1_4_0_, taskeverte0_.Name as name2_4_0_, taskeverte0_.ConnectionString as connectionstring3_4_0_, taskeverte0_.EditionId as editionid4_4_0_, taskeverte0_.CreationTime as creationtime5_4_0_, taskeverte0_.CreatorUserId as creatoruserid6_4_0_ FROM AbpTenants taskeverte0_ WHERE taskeverte0_.Id=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpTenants'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+ClientConnectionId:d4c01653-2f98-4cd6-9191-da95ef6886b1
+Error Number:208,State:1,Class:16
+WARN  2019-09-02 15:07:42,757 [9    ] NHibernate.Util.ADOExceptionReporter     - Invalid object name 'AbpTenants'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpTenants'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(DbCommand st, QueryParameters queryParameters, ISessionImplementor session, IResultTransformer forcedResultTransformer)
+ClientConnectionId:d4c01653-2f98-4cd6-9191-da95ef6886b1
+Error Number:208,State:1,Class:16
+ERROR 2019-09-02 15:07:42,757 [9    ] NHibernate.Util.ADOExceptionReporter     - Invalid object name 'AbpTenants'.
+WARN  2019-09-02 15:07:42,760 [9    ] NHibernate.Util.ADOExceptionReporter     - Invalid object name 'AbpTenants'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpTenants'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(DbCommand st, QueryParameters queryParameters, ISessionImplementor session, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.LoadEntity(ISessionImplementor session, Object id, IType identifierType, Object optionalObject, String optionalEntityName, Object optionalIdentifier, IEntityPersister persister)
+ClientConnectionId:d4c01653-2f98-4cd6-9191-da95ef6886b1
+Error Number:208,State:1,Class:16
+ERROR 2019-09-02 15:07:42,761 [9    ] NHibernate.Util.ADOExceptionReporter     - Invalid object name 'AbpTenants'.
+DEBUG 2019-09-02 15:08:33,597 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 15:08:33,606 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-09-02 15:08:33,611 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:08:33,612 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:08:33,612 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:08:33,613 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:08:33,613 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:08:33,613 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:08:33,613 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:08:33,613 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:08:33,613 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:08:33,613 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:08:33,616 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+ERROR 2019-09-02 15:08:34,881 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+FATAL 2019-09-02 15:08:45,153 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: Cannot open database "Taskever" requested by the login. The login failed.
+Login failed for user 'DESKTOP-CR06IJ8\Musa'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: Cannot open database "Taskever" requested by the login. The login failed.
+Login failed for user 'DESKTOP-CR06IJ8\Musa'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactoryImplementor sessionFactory)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 15:15:02,028 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 15:15:02,038 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-09-02 15:15:02,042 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:15:02,044 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:15:02,044 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:15:02,044 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:15:02,044 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:15:02,044 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:15:02,045 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:15:02,045 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:15:02,045 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:15:02,045 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:15:02,047 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+ERROR 2019-09-02 15:16:56,637 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2019-09-02 15:17:03,365 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-09-02 15:17:03,414 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-02 15:17:03,420 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-09-02 15:17:03,435 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-09-02 15:17:03,435 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Taskever
+DEBUG 2019-09-02 15:17:03,758 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+ERROR 2019-09-02 15:17:04,609 [5    ] NHibernate.AdoNet.AbstractBatcher        - Could not execute query: SELECT taskeverte0_.Id as id1_4_0_, taskeverte0_.Name as name2_4_0_, taskeverte0_.ConnectionString as connectionstring3_4_0_, taskeverte0_.EditionId as editionid4_4_0_, taskeverte0_.CreationTime as creationtime5_4_0_, taskeverte0_.CreatorUserId as creatoruserid6_4_0_ FROM AbpTenants taskeverte0_ WHERE taskeverte0_.Id=@p0
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpTenants'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+ClientConnectionId:b11e45d6-3c9f-46d2-bad5-d85e390af1d6
+Error Number:208,State:1,Class:16
+WARN  2019-09-02 15:17:04,618 [5    ] NHibernate.Util.ADOExceptionReporter     - Invalid object name 'AbpTenants'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpTenants'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(DbCommand st, QueryParameters queryParameters, ISessionImplementor session, IResultTransformer forcedResultTransformer)
+ClientConnectionId:b11e45d6-3c9f-46d2-bad5-d85e390af1d6
+Error Number:208,State:1,Class:16
+ERROR 2019-09-02 15:17:04,618 [5    ] NHibernate.Util.ADOExceptionReporter     - Invalid object name 'AbpTenants'.
+WARN  2019-09-02 15:17:04,622 [5    ] NHibernate.Util.ADOExceptionReporter     - Invalid object name 'AbpTenants'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpTenants'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(DbCommand st, QueryParameters queryParameters, ISessionImplementor session, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.LoadEntity(ISessionImplementor session, Object id, IType identifierType, Object optionalObject, String optionalEntityName, Object optionalIdentifier, IEntityPersister persister)
+ClientConnectionId:b11e45d6-3c9f-46d2-bad5-d85e390af1d6
+Error Number:208,State:1,Class:16
+ERROR 2019-09-02 15:17:04,622 [5    ] NHibernate.Util.ADOExceptionReporter     - Invalid object name 'AbpTenants'.
+DEBUG 2019-09-02 15:32:13,960 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 15:32:13,970 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-09-02 15:32:13,974 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:32:13,976 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:32:13,976 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:32:13,976 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:32:13,976 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:32:13,976 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:32:13,976 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:32:13,977 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:32:13,977 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:32:13,977 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:32:13,979 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+ERROR 2019-09-02 15:32:19,482 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2019-09-02 15:32:31,067 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-09-02 15:32:31,134 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-02 15:32:31,139 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-09-02 15:32:31,152 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-09-02 15:32:31,153 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Taskever
+DEBUG 2019-09-02 15:32:31,438 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-09-02 15:38:11,651 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 15:38:11,663 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-09-02 15:38:11,667 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:38:11,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:38:11,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:38:11,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:38:11,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:38:11,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:38:11,669 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:38:11,670 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:38:11,670 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:38:11,670 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:38:11,672 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+DEBUG 2019-09-02 15:44:33,599 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 15:44:33,608 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-09-02 15:44:33,613 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:44:33,614 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:44:33,614 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:44:33,614 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:44:33,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:44:33,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:44:33,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:44:33,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:44:33,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:44:33,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:44:33,617 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+DEBUG 2019-09-02 15:51:48,610 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 15:51:48,620 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-09-02 15:51:48,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:51:48,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:51:48,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:51:48,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:51:48,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:51:48,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:51:48,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:51:48,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:51:48,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:51:48,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:51:48,629 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+DEBUG 2019-09-02 15:55:05,812 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 15:55:05,823 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-09-02 15:55:05,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:55:05,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:55:05,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:55:05,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:55:05,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverCoreModule, Taskever, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:55:05,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:55:05,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:55:05,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:55:05,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:55:05,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 15:55:05,833 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.

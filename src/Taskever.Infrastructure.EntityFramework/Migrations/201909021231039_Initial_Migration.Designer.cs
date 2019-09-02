@@ -7,13 +7,13 @@ namespace Taskever.Infrastructure.EntityFramework.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Upgrated_To_ABP_4_8_0 : IMigrationMetadata
+    public sealed partial class Initial_Migration : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Upgrated_To_ABP_4_8_0));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial_Migration));
         
         string IMigrationMetadata.Id
         {
-            get { return "201909020715291_Upgrated_To_ABP_4_8_0"; }
+            get { return "201909021231039_Initial_Migration"; }
         }
         
         string IMigrationMetadata.Source
