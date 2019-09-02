@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
-using Abp.Domain.Repositories.NHibernate;
+using Abp.NHibernate;
+using Abp.NHibernate.Repositories;
 using NHibernate.Linq;
 using Taskever.Friendships;
 
@@ -8,11 +9,15 @@ namespace Taskever.Data.Repositories.NHibernate
 {
     public class FriendshipRepository : NhRepositoryBase<Friendship>, IFriendshipRepository
     {
+        
+        public FriendshipRepository(ISessionProvider sessionProvider) : base(sessionProvider)
+        {
+        }
         public List<Friendship> GetAllWithFriendUser(long userId, FriendshipStatus? status, bool? canAssignTask)
         {
             var query = GetAll()
                 .Fetch(f => f.Friend)
-                .Where(f => f.User.Id == userId);
+                .Where(f => f.UserId == userId);
 
             if (status.HasValue)
             {
@@ -49,5 +54,6 @@ namespace Taskever.Data.Repositories.NHibernate
 
             return query.FirstOrDefault();
         }
+
     }
 }

@@ -1,6 +1,5 @@
+using Abp.Configuration.Startup;
 using Abp.Modules;
-using Abp.Startup;
-using Abp.WebApi.Controllers.Dynamic.Builders;
 using Taskever.Activities;
 using Taskever.Friendships;
 using Taskever.Tasks;
@@ -11,30 +10,29 @@ namespace Taskever.Web.Startup
 {
     public class TaskeverWebApiModule : AbpModule
     {
-        public override void Initialize(IAbpInitializationContext initializationContext)
+        public override void Initialize()
         {
-            base.Initialize(initializationContext);
-            initializationContext.IocContainer.Install(new TaskeverWebInstaller());
+            IocManager.IocContainer.Install(new TaskeverWebInstaller());
             CreateWebApiProxiesForServices();
         }
 
-        private static void CreateWebApiProxiesForServices()
+        private void CreateWebApiProxiesForServices()
         {
             //TODO: must be able to exclude/include all methods option
 
-            DynamicApiControllerBuilder
+            Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
                 .For<ITaskeverUserAppService>("taskever/user")
                 .Build();
 
-            DynamicApiControllerBuilder
+            Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
                 .For<ITaskAppService>("taskever/task")
-                .Build(); 
+                .Build();
 
-            DynamicApiControllerBuilder
+            Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
                 .For<IFriendshipAppService>("taskever/friendship")
                 .Build();
 
-            DynamicApiControllerBuilder
+            Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
                 .For<IUserActivityAppService>("taskever/userActivity")
                 .Build();
         }

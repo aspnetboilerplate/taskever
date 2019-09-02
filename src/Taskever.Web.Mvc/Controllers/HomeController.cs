@@ -1,8 +1,5 @@
-﻿using System.Linq;
-using System.Security.Claims;
-using System.Threading;
-using System.Web.Mvc;
-using Abp.Web.Mvc.Authorization;
+﻿using System.Web.Mvc;
+using Abp.Authorization;
 
 namespace Taskever.Web.Mvc.Controllers
 {

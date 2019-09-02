@@ -3,7 +3,7 @@ using Abp.Application.Services.Dto;
 
 namespace Taskever.Activities.Dto
 {
-    public class GetFollowedActivitiesInput : IInputDto, ILimitedResultRequest
+    public class GetFollowedActivitiesInput : ILimitedResultRequest
     {
         private const int MaxMaxResultCount = 100;
 

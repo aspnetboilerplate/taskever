@@ -1,5 +1,5 @@
 ﻿using System.Data;
-using Abp.Data.Migrations.FluentMigrator;
+using Abp.Zero.FluentMigrator;
 using FluentMigrator;
 
 namespace Taskever.Data.Migrations.V20131007

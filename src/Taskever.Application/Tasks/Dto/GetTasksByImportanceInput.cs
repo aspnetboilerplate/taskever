@@ -3,7 +3,7 @@ using Abp.Application.Services.Dto;
 
 namespace Taskever.Tasks.Dto
 {
-    public class GetTasksByImportanceInput : IInputDto, ILimitedResultRequest
+    public class GetTasksByImportanceInput : ILimitedResultRequest
     {
         private const int MaxMaxResultCount = 100;
 

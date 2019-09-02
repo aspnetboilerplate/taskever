@@ -11,32 +11,36 @@ namespace Taskever.Utils.Mail
     /// </summary>
     public class EmailService : IEmailService
     {
+        private readonly ISettingManager _settingManager;
         public ILogger Logger { get; set; }
 
         /// <summary>
         /// Creates a new instance of <see cref="EmailService"/>.
         /// </summary>
-        public EmailService()
+        public EmailService(ISettingManager settingManager)
         {
-            Logger = NullLogger.Instance;
+            _settingManager = settingManager;
+            //throw new NotImplementedException();
+           // Logger = NullLogger.Instance;
         }
 
         public void SendEmail(MailMessage mail)
         {
-            try
-            {
-                mail.From = new MailAddress(SettingHelper.GetSettingValue("Abp.Net.Mail.SenderAddress"), SettingHelper.GetSettingValue("Abp.Net.Mail.DisplayName"));
-                using (var client = new SmtpClient(SettingHelper.GetSettingValue("Abp.Net.Mail.ServerAddress"), SettingHelper.GetSettingValue<int>("Abp.Net.Mail.ServerPort")))
-                {
-                    client.UseDefaultCredentials = false;
-                    client.Credentials = new System.Net.NetworkCredential(SettingHelper.GetSettingValue("Abp.Net.Mail.Username"), SettingHelper.GetSettingValue("Abp.Net.Mail.Password"));
-                    client.Send(mail);
-                }
-            }
-            catch (Exception ex)
-            {
-                Logger.Warn("Could not send email!", ex);
-            }
+            throw new NotImplementedException();
+            //try
+            //{
+            //    mail.From = new MailAddress(_settingManager.GetSettingValue("Abp.Net.Mail.SenderAddress"), _settingManager.GetSettingValue("Abp.Net.Mail.DisplayName"));
+            //    using (var client = new SmtpClient(_settingManager.GetSettingValue("Abp.Net.Mail.ServerAddress"), _settingManager.GetSettingValue<int>("Abp.Net.Mail.ServerPort")))
+            //    {
+            //        client.UseDefaultCredentials = false;
+            //        client.Credentials = new System.Net.NetworkCredential(_settingManager.GetSettingValue("Abp.Net.Mail.Username"), _settingManager.GetSettingValue("Abp.Net.Mail.Password"));
+            //        client.Send(mail);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Logger.wa("Could not send email!", ex);
+            //}
         }
     }
 }

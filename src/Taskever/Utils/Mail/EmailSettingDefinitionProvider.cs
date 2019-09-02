@@ -7,9 +7,9 @@ namespace Taskever.Utils.Mail
     /// <summary>
     /// Provide settings for email.
     /// </summary>
-    public class EmailSettingDefinitionProvider : ISettingDefinitionProvider
+    public class EmailSettingDefinitionProvider : SettingProvider
     {
-        public IEnumerable<SettingDefinition> GetSettingDefinitions(SettingDefinitionProviderContext context)
+        public override IEnumerable<SettingDefinition> GetSettingDefinitions(SettingDefinitionProviderContext context)
         {
             return new[]
                    {

@@ -1,5 +1,5 @@
 /**
- * Durandal 2.1.0 Copyright (c) 2012 Blue Spire Consulting, Inc. All Rights Reserved.
+ * Durandal 2.2.0 Copyright (c) 2010-2016 Blue Spire Consulting, Inc. All Rights Reserved.
  * Available via the MIT license.
  * see: http://durandaljs.com or https://github.com/BlueSpire/Durandal for details.
  */
@@ -490,7 +490,12 @@ define(['durandal/system', 'durandal/viewLocator', 'durandal/binder', 'durandal/
 
             tryActivate(context, function () {
                 if (context.parent.__composition_context == context) {
-                    delete context.parent.__composition_context;
+                    try {
+                        delete context.parent.__composition_context;
+                    }
+                    catch(e) {
+                        context.parent.__composition_context = undefined;
+                    }
 
                     if (context.binding) {
                         context.binding(context.child, context.parent, context);

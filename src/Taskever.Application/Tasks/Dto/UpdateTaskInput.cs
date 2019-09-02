@@ -1,12 +1,9 @@
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Web;
-using Abp.Application.Services.Dto;
 using Abp.Runtime.Validation;
 
 namespace Taskever.Tasks.Dto
 {
-    public class UpdateTaskInput : IInputDto, ICustomValidate
+    public class UpdateTaskInput :  ICustomValidate
     {
         public int Id { get; set; }
 
@@ -22,7 +19,7 @@ namespace Taskever.Tasks.Dto
 
         public byte Privacy { get; set; }
 
-        public void AddValidationErrors(List<ValidationResult> results)
+        public void AddValidationErrors(CustomValidationContext context)
         {
             Title = HttpUtility.HtmlEncode(Title);
             Description = HttpUtility.HtmlEncode(Description);

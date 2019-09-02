@@ -1,8 +1,6 @@
-using Abp.Application.Services.Dto;
-
 namespace Abp.Users.Dto
 {
-    public class GetCurrentUserInfoOutput : IOutputDto
+    public class GetCurrentUserInfoOutput 
     {
         public UserDto User { get; set; }
     }

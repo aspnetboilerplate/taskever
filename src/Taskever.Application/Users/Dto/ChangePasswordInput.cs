@@ -1,9 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-using Abp.Application.Services.Dto;
 
 namespace Abp.Users.Dto
 {
-    public class ChangePasswordInput : IInputDto
+    public class ChangePasswordInput 
     {
         [StringLength(30, MinimumLength = 3)] //TODO: Avoid Magic numbers!
         public virtual string CurrentPassword { get; set; }

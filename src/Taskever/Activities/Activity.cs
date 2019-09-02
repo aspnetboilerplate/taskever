@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
-using Abp.Security.Users;
+using Taskever.Security.Users;
 using Taskever.Tasks;
 
 namespace Taskever.Activities
@@ -12,7 +12,7 @@ namespace Taskever.Activities
         //public virtual ActivityType ActivityType { get; set; }
 
         [ForeignKey("AssignedUserId")]
-        public virtual AbpUser AssignedUser { get; set; }
+        public virtual TaskeverUser AssignedUser { get; set; }
         public virtual long AssignedUserId { get; set; }
 
         [ForeignKey("TaskId")]

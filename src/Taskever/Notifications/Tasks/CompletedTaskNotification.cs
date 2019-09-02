@@ -63,7 +63,7 @@ namespace Taskever.Notifications.Tasks
             mailBuilder.Replace("{TEXT_PRIORITY}", "Priority");
             mailBuilder.Replace("{TASK_PRIORITY}", Task.Priority.ToString());
             mailBuilder.Replace("{TEXT_COMPLETED_BY}", "Completed by");
-            mailBuilder.Replace("{TASK_COMPLETED_BY}", Task.AssignedUser.NameAndSurname);
+            mailBuilder.Replace("{TASK_COMPLETED_BY}", Task.AssignedUser.FullName);
             mailBuilder.Replace("{TEXT_NOTE_DISABLE_EMAILS}", "NOTE: If you don't want to receive emails from Taskever, you can disable emails in settings from taskever.com");
 
             mail.Body = mailBuilder.ToString();

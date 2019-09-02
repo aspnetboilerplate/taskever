@@ -1,8 +1,8 @@
-﻿using Abp.Security.Users;
+﻿using Abp.Authorization.Users;
 
 namespace Taskever.Security.Users
 {
-    public class TaskeverUser : AbpUser
+    public class TaskeverUser : AbpUser<TaskeverUser>
     {
         /// <summary>
         /// Profile image of the user. 

@@ -1,22 +1,22 @@
 ﻿using System;
 using System.Security.Claims;
+using System.Security.Policy;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using Abp.Authorization;
 using Abp.Modules.Core.Mvc.Models;
 using Abp.Runtime.Security;
-using Abp.Security.IdentityFramework;
-using Abp.Security.Users;
 using Abp.UI;
 using Abp.Users.Dto;
-using Abp.Web.Mvc.Authorization;
-using Abp.Web.Mvc.Models;
+using Abp.Web.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 using Recaptcha.Web;
 using Recaptcha.Web.Mvc;
 using Taskever.Users;
 using Taskever.Web.Mvc.Models.Account;
+using Taskever.Security.Users;
 
 namespace Taskever.Web.Mvc.Controllers
 {
@@ -24,7 +24,7 @@ namespace Taskever.Web.Mvc.Controllers
     {
         private readonly ITaskeverUserAppService _userAppService;
 
-        private readonly AbpUserManager _userManager;
+        private readonly UserManager _userManager;
 
         private IAuthenticationManager AuthenticationManager
         {
@@ -34,7 +34,7 @@ namespace Taskever.Web.Mvc.Controllers
             }
         }
 
-        public AccountController(ITaskeverUserAppService userAppService, AbpUserManager userManager)
+        public AccountController(ITaskeverUserAppService userAppService, UserManager userManager)
         {
             _userAppService = userAppService;
             _userManager = userManager;
@@ -73,10 +73,10 @@ namespace Taskever.Web.Mvc.Controllers
                 returnUrl = Request.ApplicationPath;
             }
 
-            return Json(new MvcAjaxResponse { TargetUrl = returnUrl });
+            return Json(new AjaxResponse { TargetUrl = returnUrl });
         }
 
-        private async Task SignInAsync(AbpUser user, bool isPersistent)
+        private async Task SignInAsync(TaskeverUser user, bool isPersistent)
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ExternalCookie);
             var identity = await _userManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
@@ -129,14 +129,14 @@ namespace Taskever.Web.Mvc.Controllers
 
             _userAppService.RegisterUser(input);
 
-            return Json(new MvcAjaxResponse { TargetUrl = Url.Action("ActivationInfo") });
+            return Json(new AjaxResponse { TargetUrl = Url.Action("ActivationInfo") });
         }
 
         public JsonResult SendPasswordResetLink(SendPasswordResetLinkInput input)
         {
             _userAppService.SendPasswordResetLink(input);
 
-            return Json(new MvcAjaxResponse());
+            return Json(new AjaxResponse());
         }
 
         [HttpGet]
@@ -162,13 +162,13 @@ namespace Taskever.Web.Mvc.Controllers
 
             _userAppService.ResetPassword(input);
 
-            return Json(new MvcAjaxResponse { TargetUrl = Url.Action("Login") });
+            return Json(new AjaxResponse { TargetUrl = Url.Action("Login") });
         }
 
         [Authorize]
         public JsonResult KeepSessionOpen()
         {
-            return Json(new MvcAjaxResponse());
+            return Json(new AjaxResponse());
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using Abp.Dependency;
-using Abp.Localization.Sources.Resource;
+﻿using Abp.Localization.Sources.Resource;
 
 namespace Taskever.Localization.Resources
 {

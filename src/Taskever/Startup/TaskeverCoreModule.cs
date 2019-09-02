@@ -1,23 +1,20 @@
 ﻿using System.Reflection;
-using Abp.Dependency;
-using Abp.Localization;
 using Abp.Modules;
-using Abp.Startup;
 using Taskever.Localization.Resources;
+using Taskever.Utils.Mail;
 
 namespace Taskever.Startup
 {
     public class TaskeverCoreModule : AbpModule
     {
-        public override void Initialize(IAbpInitializationContext initializationContext)
+        public override void Initialize()
         {
-            base.Initialize(initializationContext);
-            
-            //initializationContext.IocContainer.Install(new TaskeverCoreInstaller());
-            //initializationContext.IocContainer.Install(new EventHandlersInstaller());
+            IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
 
-            IocManager.Instance.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
-            LocalizationHelper.RegisterSource<TaskeverLocalizationSource>();
+            Configuration.Localization.Sources.Add(new TaskeverLocalizationSource());
+
+            Configuration.Settings.Providers.Add<EmailSettingDefinitionProvider>();
+
         }
     }
 }

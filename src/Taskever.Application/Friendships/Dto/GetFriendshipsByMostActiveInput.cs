@@ -3,7 +3,7 @@ using Abp.Application.Services.Dto;
 
 namespace Taskever.Friendships.Dto
 {
-    public class GetFriendshipsByMostActiveInput : IInputDto, ILimitedResultRequest
+    public class GetFriendshipsByMostActiveInput : ILimitedResultRequest
     {
         private const int MaxMaxResultCount = 100;
         

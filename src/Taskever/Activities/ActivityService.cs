@@ -1,8 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
+using Abp.Collections.Extensions;
 using Abp.Domain.Uow;
-using Abp.Security.Users;
-using Abp.Utils.Extensions.Collections;
 using Castle.Core.Logging;
 using Taskever.Friendships;
 using Taskever.Security.Users;
@@ -67,10 +66,11 @@ namespace Taskever.Activities
             //Add one entity for each follower and actor
             foreach (var followerUserId in followerUserIds)
             {
+                var user = _userRepository.Load(followerUserId);
                 _userFollowedActivityRepository.Insert(
                     new UserFollowedActivity
                         {
-                            User = _userRepository.Load(followerUserId),
+                            User = user,
                             Activity = activity,
                             IsActor = actorUserIds.Contains(followerUserId),
                             IsRelated = relatedUserIds.Contains(followerUserId)

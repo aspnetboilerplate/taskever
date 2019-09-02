@@ -1,5 +1,4 @@
-﻿using Abp.Security.Users;
-using Taskever.Security.Users;
+﻿using Taskever.Security.Users;
 
 namespace Abp.Users.Dto
 {
@@ -20,9 +19,7 @@ namespace Abp.Users.Dto
 
             AutoMapper.Mapper.CreateMap<RegisterUserInput, TaskeverUser>();
 
-            AutoMapper.Mapper.CreateMap<AbpUser, UserDto>().ReverseMap();
-
-            AutoMapper.Mapper.CreateMap<RegisterUserInput, AbpUser>();
+            AutoMapper.Mapper.CreateMap<TaskeverUser, UserDto>().ReverseMap();
         }
     }
 }

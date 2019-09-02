@@ -1,4 +1,4 @@
-using Abp.Domain.Entities.Mapping;
+using Abp.NHibernate.EntityMappings;
 using Taskever.Friendships;
 
 namespace Taskever.Entities.NHibernate.Mappings

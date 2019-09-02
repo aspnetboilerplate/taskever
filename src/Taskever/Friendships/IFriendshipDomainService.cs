@@ -1,10 +1,10 @@
 using Abp.Domain.Services;
-using Abp.Security.Users;
+using Taskever.Security.Users;
 
 namespace Taskever.Friendships
 {
     public interface IFriendshipDomainService : IDomainService
     {
-        bool HasFriendship(AbpUser user, AbpUser probableFriend);
+        bool HasFriendship(TaskeverUser user, TaskeverUser probableFriend);
     }
 }

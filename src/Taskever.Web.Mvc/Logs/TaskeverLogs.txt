@@ -772,3 +772,89 @@ System.AggregateException: One or more errors occurred. ---> Abp.Runtime.Validat
 WARN  2014-09-04 21:23:24,470 [6    ] Default                                  - There are 1 validation errors:
 WARN  2014-09-04 21:23:24,470 [6    ] Default                                  - The Description field is required.
 DEBUG 2014-09-04 21:23:31,879 [9    ] Taskever.Tasks.TaskAppService            - Creaded [Task 2017]
+DEBUG 2019-09-02 09:57:26,349 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 09:57:26,358 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 09:57:26,362 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 09:57:26,363 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 09:57:26,363 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 09:57:26,364 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 09:57:26,366 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+ERROR 2019-09-02 09:57:27,419 [1    ] NHibernate.Cfg.Configuration             - An association from the table TeActivities refers to an unmapped class: Taskever.Security.Users.TaskeverUser
+NHibernate.MappingException: An association from the table TeActivities refers to an unmapped class: Taskever.Security.Users.TaskeverUser
+FATAL 2019-09-02 09:57:27,425 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: An association from the table TeActivities refers to an unmapped class: Taskever.Security.Users.TaskeverUser
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.SecondPassCompileForeignKeys(Table table, ISet`1 done)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: An association from the table TeActivities refers to an unmapped class: Taskever.Security.Users.TaskeverUser
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.SecondPassCompileForeignKeys(Table table, ISet`1 done)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2019-09-02 10:25:43,232 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-02 10:25:43,241 [1    ] Abp.Modules.AbpModuleManager             - Found 4 ABP modules in total.
+DEBUG 2019-09-02 10:25:43,244 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Web.Mvc.TaskeverWebMvcModule, Taskever.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 10:25:43,245 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Taskever.Startup.TaskeverDataModule, Taskever.Infrastructure.NHibernate, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 10:25:43,246 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 10:25:43,246 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-02 10:25:43,248 [1    ] Abp.Modules.AbpModuleManager             - 4 modules loaded.
+ERROR 2019-09-02 10:25:44,287 [1    ] NHibernate.Cfg.Configuration             - An association from the table TeActivities refers to an unmapped class: Taskever.Security.Users.TaskeverUser
+NHibernate.MappingException: An association from the table TeActivities refers to an unmapped class: Taskever.Security.Users.TaskeverUser
+FATAL 2019-09-02 10:25:44,294 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: An association from the table TeActivities refers to an unmapped class: Taskever.Security.Users.TaskeverUser
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.SecondPassCompileForeignKeys(Table table, ISet`1 done)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.MappingException: An association from the table TeActivities refers to an unmapped class: Taskever.Security.Users.TaskeverUser
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.SecondPassCompileForeignKeys(Table table, ISet`1 done)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- End of inner exception stack trace ---
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at Abp.NHibernate.AbpNHibernateModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+
+

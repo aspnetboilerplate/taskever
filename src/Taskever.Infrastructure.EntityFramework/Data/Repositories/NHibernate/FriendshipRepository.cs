@@ -1,13 +1,17 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using Abp.Domain.Repositories.EntityFramework;
+using Abp.EntityFramework;
 using Taskever.Friendships;
 
 namespace Taskever.Infrastructure.EntityFramework.Data.Repositories.NHibernate
 {
     public class FriendshipRepository : TaskeverEfRepositoryBase<Friendship>, IFriendshipRepository
     {
+        public FriendshipRepository(IDbContextProvider<TaskeverDbContext> dbContextProvider) : base(dbContextProvider)
+        {
+        }
+
         public List<Friendship> GetAllWithFriendUser(long userId, FriendshipStatus? status, bool? canAssignTask)
         {
             var query = GetAll()

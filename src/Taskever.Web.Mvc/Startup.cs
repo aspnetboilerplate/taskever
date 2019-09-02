@@ -1,7 +1,7 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(Taskever.Web.Mvc.Startup))]
+[assembly: OwinStartup(typeof(Taskever.Web.Mvc.Startup))]
 namespace Taskever.Web.Mvc
 {
     public partial class Startup

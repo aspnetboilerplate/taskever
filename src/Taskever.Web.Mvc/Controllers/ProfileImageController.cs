@@ -1,12 +1,11 @@
 using System;
 using System.IO;
 using System.Web.Mvc;
+using Abp.Authorization;
 using Abp.IO;
 using Abp.UI;
-using Abp.Users;
 using Abp.Users.Dto;
 using Abp.Web.Models;
-using Abp.Web.Mvc.Authorization;
 using Taskever.Users;
 
 namespace Taskever.Web.Mvc.Controllers
@@ -30,7 +29,7 @@ namespace Taskever.Web.Mvc.Controllers
                 if (uploadfile != null)
                 {
                     var extension = Path.GetExtension(uploadfile.FileName).ToLower();
-                    
+
                     if (!(extension == ".jpg" || extension == ".jpeg" || extension == ".png" || extension == ".gif" || extension == ".bmp"))
                     {
                         throw new UserFriendlyException("Unsupported profile image type");
@@ -49,9 +48,9 @@ namespace Taskever.Web.Mvc.Controllers
                     //Change profile picture
                     var fileName = Path.GetFileName(tempPath);
                     var result = _userAppService.ChangeProfileImage(new ChangeProfileImageInput { FileName = fileName });
-                    
+
                     //Delete old file
-                    if(!string.IsNullOrWhiteSpace(result.OldFileName))
+                    if (!string.IsNullOrWhiteSpace(result.OldFileName))
                     {
                         var oldFilePath = Path.Combine(Server.MapPath("~/ProfileImages"), result.OldFileName);
                         FileHelper.DeleteIfExists(oldFilePath);
@@ -71,7 +70,7 @@ namespace Taskever.Web.Mvc.Controllers
 
         private string GenerateProfileImagePath(string fileExtension)
         {
-            var userId = Abp.Security.Users.AbpUser.CurrentUserId;
+            var userId = AbpSession.UserId;
             return Path.Combine(Server.MapPath("~/ProfileImages"), userId + "_" + DateTime.Now.Ticks + fileExtension);
         }
     }

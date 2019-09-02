@@ -2,9 +2,8 @@ using System;
 using System.Linq;
 using System.Net.Mail;
 using System.Text;
-using Abp.Domain.Uow;
 using Abp.Mapping;
-using Abp.Security.Users;
+using Abp.Runtime.Session;
 using Abp.UI;
 using Taskever.Friendships.Dto;
 using Taskever.Security.Users;
@@ -17,18 +16,21 @@ namespace Taskever.Friendships
         private readonly ITaskeverUserRepository _taskeverUserRepository;
         private readonly IFriendshipRepository _friendshipRepository;
         private readonly IEmailService _emailService;
+        private readonly IAbpSession _abpSession;
         private readonly IFriendshipPolicy _friendshipPolicy;
 
         public FriendshipAppService(
             ITaskeverUserRepository taskeverUserRepository, 
             IFriendshipRepository friendshipRepository, 
             IFriendshipPolicy friendshipPolicy, 
-            IEmailService emailService)
+            IEmailService emailService,
+            IAbpSession abpSession)
         {
             _taskeverUserRepository = taskeverUserRepository;
             _friendshipRepository = friendshipRepository;
             _friendshipPolicy = friendshipPolicy;
             _emailService = emailService;
+            _abpSession = abpSession;
         }
 
         public virtual GetFriendshipsOutput GetFriendships(GetFriendshipsInput input)
@@ -42,7 +44,7 @@ namespace Taskever.Friendships
         {
             var friendships =
                 _friendshipRepository
-                    .GetAllWithFriendUser(AbpUser.CurrentUserId.Value)
+                    .GetAllWithFriendUser(_abpSession.UserId.Value)
                     .Where(f => f.Status == FriendshipStatus.Accepted)
                     .OrderByDescending(friendship => friendship.LastVisitTime)
                     .Take(input.MaxResultCount)
@@ -53,7 +55,7 @@ namespace Taskever.Friendships
 
         public virtual void ChangeFriendshipProperties(ChangeFriendshipPropertiesInput input)
         {
-            var currentUser = _taskeverUserRepository.Load(AbpUser.CurrentUserId.Value);
+            var currentUser = _taskeverUserRepository.Load(_abpSession.UserId.Value);
             var friendShip = _friendshipRepository.Get(input.Id); //TODO: Call FirstOrDefault and throw a specific exception?
 
             if (!_friendshipPolicy.CanChangeFriendshipProperties(currentUser, friendShip))
@@ -82,7 +84,7 @@ namespace Taskever.Friendships
                 throw new UserFriendlyException("Can not find a user with email address: " + input.EmailAddress);
             }
 
-            var currentUser = _taskeverUserRepository.Load(AbpUser.CurrentUserId.Value);
+            var currentUser = _taskeverUserRepository.Load(_abpSession.UserId.Value);
 
             //Check if they are already friends
             var friendship = _friendshipRepository.GetOrNull(currentUser.Id, friendUser.Id);
@@ -107,7 +109,7 @@ namespace Taskever.Friendships
 
         public virtual void RemoveFriendship(RemoveFriendshipInput input)
         {
-            var currentUser = _taskeverUserRepository.Load(AbpUser.CurrentUserId.Value);
+            var currentUser = _taskeverUserRepository.Load(_abpSession.UserId.Value);
             var friendship = _friendshipRepository.Get(input.Id); //TODO: Call FirstOrDefault and throw a specific exception?
 
             if (!_friendshipPolicy.CanRemoveFriendship(currentUser, friendship)) //TODO: Maybe this method can throw exception!
@@ -121,7 +123,7 @@ namespace Taskever.Friendships
         public virtual void AcceptFriendship(AcceptFriendshipInput input)
         {
             var friendship = _friendshipRepository.Get(input.Id); //TODO: Call FirstOrDefault and throw a specific exception?
-            var currentUser = _taskeverUserRepository.Load(AbpUser.CurrentUserId.Value);
+            var currentUser = _taskeverUserRepository.Load(_abpSession.UserId.Value);
             friendship.AcceptBy(currentUser);
             SendAcceptEmail(friendship.Pair);
         }
@@ -138,7 +140,7 @@ namespace Taskever.Friendships
 
         public void UpdateLastVisitTime(UpdateLastVisitTimeInput input)
         {
-            var friendship = _friendshipRepository.GetOrNull(AbpUser.CurrentUserId.Value, input.FriendUserId);
+            var friendship = _friendshipRepository.GetOrNull(_abpSession.UserId.Value, input.FriendUserId);
             if (friendship != null)
             {
                 friendship.LastVisitTime = DateTime.Now;
@@ -150,7 +152,7 @@ namespace Taskever.Friendships
             var mail = new MailMessage();
             mail.To.Add(friendship.Friend.EmailAddress);
             mail.IsBodyHtml = true;
-            mail.Subject = friendship.User.NameAndSurname + " wants to be your friend on Taskever";
+            mail.Subject = friendship.User.FullName + " wants to be your friend on Taskever";
             mail.SubjectEncoding = Encoding.UTF8;
 
             var mailBuilder = new StringBuilder();
@@ -179,7 +181,7 @@ namespace Taskever.Friendships
 
             mailBuilder.Replace("{TEXT_HTML_TITLE}", "Friendship request on Taskever");
             mailBuilder.Replace("{TEXT_HEADER}", "You have a friendship request on Taskever");
-            mailBuilder.Replace("{TEXT_DESCRIPTION}", friendship.User.NameAndSurname + " has sent a friendship request to you.");
+            mailBuilder.Replace("{TEXT_DESCRIPTION}", friendship.User.FullName + " has sent a friendship request to you.");
             mailBuilder.Replace("{TEXT_CLICK_TO_ANSWER}", "Click here to answer to the request.");
 
             mail.Body = mailBuilder.ToString();
@@ -193,7 +195,7 @@ namespace Taskever.Friendships
             var mail = new MailMessage();
             mail.To.Add(friendship.User.EmailAddress);
             mail.IsBodyHtml = true;
-            mail.Subject = friendship.Friend.NameAndSurname + " accepted your friendship request on Taskever";
+            mail.Subject = friendship.Friend.FullName + " accepted your friendship request on Taskever";
             mail.SubjectEncoding = Encoding.UTF8;
 
             var mailBuilder = new StringBuilder();
@@ -222,8 +224,8 @@ namespace Taskever.Friendships
 
             mailBuilder.Replace("{TEXT_HTML_TITLE}", "Friendship request is accepted on Taskever");
             mailBuilder.Replace("{TEXT_HEADER}", "Your friendship request is accepted!");
-            mailBuilder.Replace("{TEXT_DESCRIPTION}", friendship.Friend.NameAndSurname + " has accepted your friendship request.");
-            mailBuilder.Replace("{TEXT_CLICK_TO_SEE_PROFILE}", "Click here to see profile of " + friendship.Friend.NameAndSurname);
+            mailBuilder.Replace("{TEXT_DESCRIPTION}", friendship.Friend.FullName + " has accepted your friendship request.");
+            mailBuilder.Replace("{TEXT_CLICK_TO_SEE_PROFILE}", "Click here to see profile of " + friendship.Friend.FullName);
             mailBuilder.Replace("{FRIEND_ID}", friendship.Friend.Id.ToString());
 
             mail.Body = mailBuilder.ToString();

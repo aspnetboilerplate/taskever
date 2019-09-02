@@ -1,9 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-using Abp.Application.Services.Dto;
 
 namespace Abp.Users.Dto
 {
-    public class RegisterUserInput : IInputDto
+    public class RegisterUserInput 
     {
         [Required]
         [StringLength(30)]

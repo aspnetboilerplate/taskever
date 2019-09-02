@@ -1,9 +1,8 @@
 using System.Collections.Generic;
-using Abp.Application.Services.Dto;
 
 namespace Taskever.Friendships.Dto
 {
-    public class GetFriendshipsByMostActiveOutput : IOutputDto
+    public class GetFriendshipsByMostActiveOutput 
     {
         public IList<FriendshipDto> Friendships { get; set; }
     }

@@ -1,10 +1,9 @@
 using System.Web;
-using Abp.Application.Services.Dto;
 using Abp.Runtime.Validation;
 
 namespace Taskever.Tasks.Dto
 {
-    public class CreateTaskInput : IInputDto, IShouldNormalize
+    public class CreateTaskInput : IShouldNormalize
     {
         public TaskDto Task { get; set; }
 

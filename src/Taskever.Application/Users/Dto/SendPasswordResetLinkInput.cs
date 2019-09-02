@@ -1,8 +1,6 @@
-using Abp.Application.Services.Dto;
-
 namespace Abp.Users.Dto
 {
-    public class SendPasswordResetLinkInput : IInputDto
+    public class SendPasswordResetLinkInput 
     {
         public string EmailAddress { get; set; }
     }

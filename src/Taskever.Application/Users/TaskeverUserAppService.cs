@@ -1,12 +1,10 @@
 using System.Collections.Generic;
 using System.Net.Mail;
 using System.Text;
-using Abp;
-using Abp.Domain.Uow;
+using Abp.Extensions;
 using Abp.Mapping;
-using Abp.Security.Users;
+using Abp.Runtime.Session;
 using Abp.UI;
-using Abp.Users;
 using Abp.Users.Dto;
 using Microsoft.AspNet.Identity;
 using Taskever.Friendships;
@@ -20,18 +18,20 @@ namespace Taskever.Users
     {
         private readonly ITaskeverUserRepository _userRepository;
         private readonly IEmailService _emailService;
+        private readonly IAbpSession _abpSession;
         private readonly IFriendshipRepository _friendshipRepository;
 
-        public TaskeverUserAppService(ITaskeverUserRepository userRepository, IFriendshipRepository friendshipRepository, IEmailService emailService)
+        public TaskeverUserAppService(ITaskeverUserRepository userRepository, IFriendshipRepository friendshipRepository, IEmailService emailService, IAbpSession abpSession)
         {
             _userRepository = userRepository;
             _friendshipRepository = friendshipRepository;
             _emailService = emailService;
+            _abpSession = abpSession;
         }
 
         public GetUserProfileOutput GetUserProfile(GetUserProfileInput input)
         {
-            var currentUser = _userRepository.Load(AbpUser.CurrentUserId.Value);
+            var currentUser = _userRepository.Load(_abpSession.UserId.Value);
 
             var profileUser = _userRepository.Get(input.UserId);
             if (profileUser == null)
@@ -58,7 +58,7 @@ namespace Taskever.Users
 
         public ChangeProfileImageOutput ChangeProfileImage(ChangeProfileImageInput input)
         {
-            var currentUser = _userRepository.Get(AbpUser.CurrentUserId.Value); //TODO: test Load method
+            var currentUser = _userRepository.Get(_abpSession.UserId.Value); //TODO: test Load method
             var oldFileName = currentUser.ProfileImage;
 
             currentUser.ProfileImage = input.FileName;
@@ -100,7 +100,7 @@ namespace Taskever.Users
 
             var userEntity = registerUser.MapTo<TaskeverUser>();
             userEntity.Password = new PasswordHasher().HashPassword(userEntity.Password);
-            userEntity.GenerateEmailConfirmationCode();
+            userEntity.SetNewEmailConfirmationCode();
             _userRepository.Insert(userEntity);
             SendConfirmationEmail(userEntity);
         }
@@ -108,18 +108,28 @@ namespace Taskever.Users
         public void ConfirmEmail(ConfirmEmailInput input)
         {
             var user = _userRepository.Get(input.UserId);
-            user.ConfirmEmail(input.ConfirmationCode);
+            if (user != null && user.IsEmailConfirmed)
+            {
+                return;
+            }
+            if (user == null || user.EmailConfirmationCode.IsNullOrEmpty() || user.EmailConfirmationCode != input.ConfirmationCode)
+            {
+                throw new UserFriendlyException("Invalid Email Confirmation Code");
+            }
+
+            user.IsEmailConfirmed = true;
+            user.EmailConfirmationCode = null;
         }
 
         public GetCurrentUserInfoOutput GetCurrentUserInfo(GetCurrentUserInfoInput input)
         {
             //TODO: Use GetUser?
-            return new GetCurrentUserInfoOutput { User = _userRepository.Get(AbpUser.CurrentUserId.Value).MapTo<UserDto>() };
+            return new GetCurrentUserInfoOutput { User = _userRepository.Get(_abpSession.UserId.Value).MapTo<UserDto>() };
         }
 
         public void ChangePassword(ChangePasswordInput input)
         {
-            var currentUser = _userRepository.Get(AbpUser.CurrentUserId.Value);
+            var currentUser = _userRepository.Get(_abpSession.UserId.Value);
             if (currentUser.Password != input.CurrentPassword)
             {
                 throw new UserFriendlyException("Current password is invalid!");
@@ -137,7 +147,7 @@ namespace Taskever.Users
                 throw new UserFriendlyException("Can not find this email address in the system.");
             }
 
-            user.GeneratePasswordResetCode();
+            user.SetNewPasswordResetCode();
             SendPasswordResetLinkEmail(user);
         }
 
@@ -160,7 +170,7 @@ namespace Taskever.Users
 
         #region Private methods
 
-        private void SendConfirmationEmail(AbpUser user)
+        private void SendConfirmationEmail(TaskeverUser user)
         {
             var mail = new MailMessage();
             mail.To.Add(user.EmailAddress);
@@ -205,7 +215,7 @@ namespace Taskever.Users
             _emailService.SendEmail(mail);
         }
 
-        private void SendPasswordResetLinkEmail(AbpUser user)
+        private void SendPasswordResetLinkEmail(TaskeverUser user)
         {
             var mail = new MailMessage();
             mail.To.Add(user.EmailAddress);

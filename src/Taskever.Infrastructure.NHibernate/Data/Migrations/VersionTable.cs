@@ -1,16 +1,14 @@
-﻿using FluentMigrator.VersionTableInfo;
-
-namespace Taskever.Data.Migrations
+﻿namespace Taskever.Data.Migrations
 {
-    [VersionTableMetaData]
-    public class VersionTable : DefaultVersionTableMetaData
-    {
-        public override string TableName
-        {
-            get
-            {
-                return "TeVersionInfo";
-            }
-        }
-    }
+    //[VersionTableMetaData]
+    //public class VersionTable : DefaultVersionTableMetaData
+    //{
+    //    public override string TableName
+    //    {
+    //        get
+    //        {
+    //            return "TeVersionInfo";
+    //        }
+    //    }
+    //}
 }

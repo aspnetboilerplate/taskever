@@ -5,7 +5,7 @@ using Abp.Runtime.Validation;
 
 namespace Taskever.Tasks.Dto
 {
-    public class GetTasksInput : IInputDto, IPagedResultRequest, ICustomValidate
+    public class GetTasksInput : IPagedResultRequest, ICustomValidate
     {
         [Range(1, long.MaxValue)]
         public long AssignedUserId { get; set; }
@@ -22,12 +22,11 @@ namespace Taskever.Tasks.Dto
             TaskStates = new List<TaskState>();
         }
 
-        public void AddValidationErrors(List<ValidationResult> results)
+        public void AddValidationErrors(CustomValidationContext context)
         {
-            //TODO: For demonstration, do it declarative!
             if (AssignedUserId <= 0)
             {
-                results.Add(new ValidationResult("AssignedUserId must be a positive value!", new[] { "AssignedUserId" }));
+                context.Results.Add(new ValidationResult("AssignedUserId must be a positive value!", new[] { "AssignedUserId" }));
             }
         }
     }

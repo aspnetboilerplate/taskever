@@ -1,8 +1,6 @@
-using Abp.Application.Services.Dto;
-
 namespace Taskever.Friendships.Dto
 {
-    public class SendFriendshipRequestOutput : IOutputDto
+    public class SendFriendshipRequestOutput 
     {
         public FriendshipStatus Status { get; set; }
     }

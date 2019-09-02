@@ -1,14 +1,12 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;
-using Abp.Runtime.Validation;
 
 namespace Taskever.Tasks.Dto
 {
     /// <summary>
     /// Task DTO.
     /// </summary>
-    public class TaskDto : AuditedEntityDto, IValidate
+    public class TaskDto : AuditedEntityDto
     {
         [Required]
         [StringLength(200, MinimumLength = 1)]

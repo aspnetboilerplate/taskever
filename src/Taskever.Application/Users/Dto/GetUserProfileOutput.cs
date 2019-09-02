@@ -1,9 +1,8 @@
-using Abp.Application.Services.Dto;
 using Abp.Users.Dto;
 
 namespace Taskever.Users.Dto
 {
-    public class GetUserProfileOutput :IOutputDto
+    public class GetUserProfileOutput 
     {
         public bool CanNotSeeTheProfile { get; set; }
 

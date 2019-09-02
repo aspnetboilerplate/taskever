@@ -1,9 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-using Abp.Application.Services.Dto;
 
 namespace Taskever.Friendships.Dto
 {
-    public class SendFriendshipRequestInput : IInputDto
+    public class SendFriendshipRequestInput 
     {
         [Required]
         [EmailAddress]

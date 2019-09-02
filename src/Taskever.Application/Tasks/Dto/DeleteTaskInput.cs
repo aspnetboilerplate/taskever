@@ -1,13 +1,11 @@
-using Abp.Application.Services.Dto;
-
 namespace Taskever.Tasks.Dto
 {
-    public class DeleteTaskInput :IInputDto
+    public class DeleteTaskInput 
     {
         public int Id { get; set; }
     }
 
-    public class DeleteTaskOutput : IOutputDto
+    public class DeleteTaskOutput 
     {
         public int Id { get; set; }
     }

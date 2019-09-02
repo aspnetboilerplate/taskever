@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Abp.Domain.Repositories.EntityFramework;
+using Abp.EntityFramework;
 using Taskever.Activities;
 
 namespace Taskever.Infrastructure.EntityFramework.Data.Repositories.NHibernate
@@ -38,6 +38,10 @@ namespace Taskever.Infrastructure.EntityFramework.Data.Repositories.NHibernate
             //return query
             //    .SetMaxResults(maxResultCount)
             //    .List<UserFollowedActivity>();
+        }
+
+        public UserFollowedActivityRepository(IDbContextProvider<TaskeverDbContext> dbContextProvider) : base(dbContextProvider)
+        {
         }
     }
 }

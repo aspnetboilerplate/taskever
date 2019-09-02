@@ -1,8 +1,6 @@
-using Abp.Application.Services.Dto;
-
 namespace Taskever.Friendships.Dto
 {
-    public class ChangeFriendshipPropertiesInput : IInputDto
+    public class ChangeFriendshipPropertiesInput
     {
         public int Id { get; set; }
 

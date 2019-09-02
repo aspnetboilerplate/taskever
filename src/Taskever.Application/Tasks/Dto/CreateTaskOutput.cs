@@ -1,8 +1,6 @@
-using Abp.Application.Services.Dto;
-
 namespace Taskever.Tasks.Dto
 {
-    public class CreateTaskOutput : IOutputDto
+    public class CreateTaskOutput 
     {
         public TaskDto Task { get; set; }
     }

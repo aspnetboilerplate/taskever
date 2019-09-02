@@ -1,9 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-using Abp.Application.Services.Dto;
 
 namespace Taskever.Friendships.Dto
 {
-    public class GetFriendshipsInput : IInputDto
+    public class GetFriendshipsInput 
     {
         [Range(1, int.MaxValue)]
         public long UserId { get; set; }

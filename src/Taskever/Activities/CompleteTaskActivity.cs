@@ -1,6 +1,3 @@
-using System.ComponentModel.DataAnnotations.Schema;
-using Abp.Security.Users;
-using Taskever.Tasks;
 
 namespace Taskever.Activities
 {

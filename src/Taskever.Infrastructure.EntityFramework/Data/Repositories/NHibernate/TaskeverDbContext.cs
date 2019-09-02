@@ -1,10 +1,8 @@
 using System.Data.Entity;
-using System.Data.Entity.ModelConfiguration;
-using Abp.Domain.Repositories.EntityFramework;
-using Abp.Security.Users;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using Abp.EntityFramework;
 using Taskever.Activities;
 using Taskever.Friendships;
-using Taskever.Security.Roles;
 using Taskever.Security.Users;
 using Taskever.Tasks;
 
@@ -47,7 +45,8 @@ namespace Taskever.Infrastructure.EntityFramework.Data.Repositories.NHibernate
             
             //modelBuilder.Entity<AbpUser>().ToTable("AbpUsers");
 
-            modelBuilder.Ignore<AbpUser>();
+            modelBuilder.Ignore<TaskeverUser>();
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
 
             modelBuilder.Entity<TaskeverUser>().ToTable("AbpUsers");
             modelBuilder.Entity<Activity>().ToTable("TeActivities")
@@ -58,6 +57,8 @@ namespace Taskever.Infrastructure.EntityFramework.Data.Repositories.NHibernate
             modelBuilder.Entity<Friendship>().ToTable("TeFriendships");
             modelBuilder.Entity<Task>().ToTable("TeTasks");
             modelBuilder.Entity<UserFollowedActivity>().ToTable("TeUserFollowedActivities");
+
+
         }
     }
 }

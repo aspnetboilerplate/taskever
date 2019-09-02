@@ -1,13 +1,11 @@
 using System;
 using System.Linq;
 using Abp.Application.Services;
-using Abp.Domain.Uow;
+using Abp.Collections.Extensions;
 using Abp.Events.Bus;
 using Abp.Events.Bus.Entities;
 using Abp.Mapping;
-using Abp.Security.Users;
 using Abp.UI;
-using Abp.Utils.Extensions.Collections;
 using Taskever.Security.Users;
 using Taskever.Tasks.Dto;
 using Taskever.Tasks.Events;
@@ -35,7 +33,7 @@ namespace Taskever.Tasks
 
         public GetTaskOutput GetTask(GetTaskInput input)
         {
-            var currentUser = _userRepository.Load(AbpUser.CurrentUserId.Value);
+            var currentUser = _userRepository.Load(AbpSession.UserId.Value);
             var task = _taskRepository.FirstOrDefault(input.Id);
 
             if (task == null)
@@ -99,7 +97,7 @@ namespace Taskever.Tasks
         public virtual CreateTaskOutput CreateTask(CreateTaskInput input)
         {
             //Get entities from database
-            var creatorUser = _userRepository.Get(AbpUser.CurrentUserId.Value);
+            var creatorUser = _userRepository.Get(AbpSession.UserId.Value);
             var assignedUser = _userRepository.Get(input.Task.AssignedUserId);
 
             if (!_taskPolicy.CanAssignTask(creatorUser, assignedUser))
@@ -123,7 +121,7 @@ namespace Taskever.Tasks
 
             Logger.Debug("Creaded " + taskEntity);
 
-            _eventBus.TriggerUow(this, new EntityCreatedEventData<Task>(taskEntity));
+            _eventBus.Trigger( this, new EntityCreatedEventData<Task>(taskEntity));
 
             return new CreateTaskOutput
                        {
@@ -139,7 +137,7 @@ namespace Taskever.Tasks
                 throw new Exception("Can not found the task!");
             }
 
-            var currentUser = _userRepository.Load(AbpUser.CurrentUserId.Value); //TODO: Add method LoadCurrentUser and GetCurrentUser ???
+            var currentUser = _userRepository.Load(AbpSession.UserId.Value); //TODO: Add method LoadCurrentUser and GetCurrentUser ???
             if (!_taskPolicy.CanUpdateTask(currentUser, task))
             {
                 throw new UserFriendlyException("You can not update this task!");
@@ -169,7 +167,7 @@ namespace Taskever.Tasks
 
             if (oldTaskState != TaskState.Completed && task.State == TaskState.Completed)
             {
-                _eventBus.TriggerUow(this, new TaskCompletedEventData(task));
+                _eventBus.Trigger(this, new TaskCompletedEventData(task));
             }
         }
 
@@ -181,7 +179,7 @@ namespace Taskever.Tasks
                 throw new Exception("Can not found the task!");
             }
 
-            var currentUser = _userRepository.Load(AbpUser.CurrentUserId.Value);
+            var currentUser = _userRepository.Load(AbpSession.UserId.Value);
             if (!_taskPolicy.CanDeleteTask(currentUser, task))
             {
                 throw new UserFriendlyException("You can not delete this task!");
@@ -194,7 +192,7 @@ namespace Taskever.Tasks
 
         private IQueryable<Task> CreateQueryForAssignedTasksOfUser(long assignedUserId)
         {
-            var currentUser = _userRepository.Load(AbpUser.CurrentUserId.Value);
+            var currentUser = _userRepository.Load(AbpSession.UserId.Value);
             var userOfTasks = _userRepository.Load(assignedUserId);
 
             if (!_taskPolicy.CanSeeTasksOfUser(currentUser, userOfTasks))

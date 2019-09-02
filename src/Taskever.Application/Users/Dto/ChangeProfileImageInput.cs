@@ -1,8 +1,6 @@
-using Abp.Application.Services.Dto;
-
 namespace Abp.Users.Dto
 {
-    public class ChangeProfileImageInput :IInputDto
+    public class ChangeProfileImageInput 
     {
         public string FileName { get; set; }
     }

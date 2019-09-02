@@ -1,5 +1,5 @@
 using Abp.Mapping;
-using Abp.Security.Users;
+using Abp.Runtime.Session;
 using Abp.UI;
 using Taskever.Activities.Dto;
 using Taskever.Friendships;
@@ -12,17 +12,19 @@ namespace Taskever.Activities
         private readonly ITaskeverUserRepository _userRepository;
         private readonly IUserFollowedActivityRepository _followedActivityRepository;
         private readonly IFriendshipDomainService _friendshipDomainService;
+        private readonly IAbpSession _abpSession;
 
-        public UserActivityAppService(ITaskeverUserRepository userRepository, IUserFollowedActivityRepository followedActivityRepository, IFriendshipDomainService friendshipDomainService)
+        public UserActivityAppService(ITaskeverUserRepository userRepository, IUserFollowedActivityRepository followedActivityRepository, IFriendshipDomainService friendshipDomainService,IAbpSession abpSession)
         {
             _userRepository = userRepository;
             _followedActivityRepository = followedActivityRepository;
             _friendshipDomainService = friendshipDomainService;
+            _abpSession = abpSession;
         }
 
         public GetFollowedActivitiesOutput GetFollowedActivities(GetFollowedActivitiesInput input)
         {
-            var currentUser = _userRepository.Load(AbpUser.CurrentUserId.Value);
+            var currentUser = _userRepository.Load(_abpSession.UserId.Value);
             var user = _userRepository.Load(input.UserId);
 
             //Can see activities of this user?

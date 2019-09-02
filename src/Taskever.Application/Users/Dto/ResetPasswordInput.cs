@@ -1,9 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-using Abp.Application.Services.Dto;
 
 namespace Abp.Users.Dto
 {
-    public class ResetPasswordInput : IInputDto
+    public class ResetPasswordInput 
     {
         [Range(1, long.MaxValue)]
         public long UserId { get; set; }
