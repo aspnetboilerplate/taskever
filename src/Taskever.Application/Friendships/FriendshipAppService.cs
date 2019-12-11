@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Net.Mail;
 using System.Text;
-using Abp.Mapping;
+using Abp.ObjectMapping;
 using Abp.Runtime.Session;
 using Abp.UI;
 using Taskever.Friendships.Dto;
@@ -17,27 +17,30 @@ namespace Taskever.Friendships
         private readonly IFriendshipRepository _friendshipRepository;
         private readonly IEmailService _emailService;
         private readonly IAbpSession _abpSession;
+        private readonly IObjectMapper _objectMapper;
         private readonly IFriendshipPolicy _friendshipPolicy;
 
         public FriendshipAppService(
-            ITaskeverUserRepository taskeverUserRepository, 
-            IFriendshipRepository friendshipRepository, 
-            IFriendshipPolicy friendshipPolicy, 
+            ITaskeverUserRepository taskeverUserRepository,
+            IFriendshipRepository friendshipRepository,
+            IFriendshipPolicy friendshipPolicy,
             IEmailService emailService,
-            IAbpSession abpSession)
+            IAbpSession abpSession,
+            IObjectMapper objectMapper)
         {
             _taskeverUserRepository = taskeverUserRepository;
             _friendshipRepository = friendshipRepository;
             _friendshipPolicy = friendshipPolicy;
             _emailService = emailService;
             _abpSession = abpSession;
+            _objectMapper = objectMapper;
         }
 
         public virtual GetFriendshipsOutput GetFriendships(GetFriendshipsInput input)
         {
             //TODO: Check if current user can see friendships of the the requested user!
             var friendships = _friendshipRepository.GetAllWithFriendUser(input.UserId, input.Status, input.CanAssignTask);
-            return new GetFriendshipsOutput { Friendships = friendships.MapIList<Friendship, FriendshipDto>() };
+            return new GetFriendshipsOutput { Friendships = friendships.Select(f => _objectMapper.Map<FriendshipDto>(f)).ToList() };
         }
 
         public GetFriendshipsByMostActiveOutput GetFriendshipsByMostActive(GetFriendshipsByMostActiveInput input)
@@ -50,7 +53,7 @@ namespace Taskever.Friendships
                     .Take(input.MaxResultCount)
                     .ToList();
 
-            return new GetFriendshipsByMostActiveOutput { Friendships = friendships.MapIList<Friendship, FriendshipDto>() };
+            return new GetFriendshipsByMostActiveOutput { Friendships = friendships.Select(f => _objectMapper.Map<FriendshipDto>(f)).ToList() };
         }
 
         public virtual void ChangeFriendshipProperties(ChangeFriendshipPropertiesInput input)

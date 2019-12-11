@@ -1,4 +1,5 @@
-﻿using Taskever.Activities;
+﻿using AutoMapper;
+using Taskever.Activities;
 using Taskever.Activities.Dto;
 using Taskever.Friendships;
 using Taskever.Friendships.Dto;
@@ -7,23 +8,21 @@ using Taskever.Tasks.Dto;
 
 namespace Taskever.Mapping
 {
-    public static class TaskeverDtoMapper
+    public class TaskeverDtoMapper : Profile
     {
-        public static void Map()
+        public TaskeverDtoMapper()
         {
             //TODO: Check unnecessary ReverseMaps
-            AutoMapper.Mapper.CreateMap<Task, TaskDto>().ReverseMap();
-            AutoMapper.Mapper.CreateMap<Task, TaskWithAssignedUserDto>().ReverseMap();
-            AutoMapper.Mapper.CreateMap<Friendship, FriendshipDto>().ReverseMap();
+            CreateMap<Task, TaskDto>().ReverseMap();
+            CreateMap<Task, TaskWithAssignedUserDto>().ReverseMap();
+            CreateMap<Friendship, FriendshipDto>().ReverseMap();
 
-            AutoMapper.Mapper
-                .CreateMap<Activity, ActivityDto>()
-                .Include<CreateTaskActivity, CreateTaskActivityDto>()
-                .Include<CompleteTaskActivity, CompleteTaskActivityDto>();
-            AutoMapper.Mapper.CreateMap<CreateTaskActivity, CreateTaskActivityDto>().ForMember(t => t.ActivityType, tt => tt.UseValue(1));
-            AutoMapper.Mapper.CreateMap<CompleteTaskActivity, CompleteTaskActivityDto>().ForMember(t => t.ActivityType, tt => tt.UseValue(2));
-
-            AutoMapper.Mapper.CreateMap<UserFollowedActivity, UserFollowedActivityDto>();
+            CreateMap<Activity, ActivityDto>()
+                  .Include<CreateTaskActivity, CreateTaskActivityDto>()
+                  .Include<CompleteTaskActivity, CompleteTaskActivityDto>();
+            CreateMap<CreateTaskActivity, CreateTaskActivityDto>().ForMember(t => t.ActivityType, tt => tt.MapFrom(x => 1));
+            CreateMap<CompleteTaskActivity, CompleteTaskActivityDto>().ForMember(t => t.ActivityType, tt => tt.MapFrom(x => 2));
+            CreateMap<UserFollowedActivity, UserFollowedActivityDto>();
         }
     }
 }

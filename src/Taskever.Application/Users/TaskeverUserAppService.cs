@@ -1,8 +1,9 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Mail;
 using System.Text;
 using Abp.Extensions;
-using Abp.Mapping;
+using Abp.ObjectMapping;
 using Abp.Runtime.Session;
 using Abp.UI;
 using Abp.Users.Dto;
@@ -19,14 +20,21 @@ namespace Taskever.Users
         private readonly ITaskeverUserRepository _userRepository;
         private readonly IEmailService _emailService;
         private readonly IAbpSession _abpSession;
+        private readonly IObjectMapper _objectMapper;
         private readonly IFriendshipRepository _friendshipRepository;
 
-        public TaskeverUserAppService(ITaskeverUserRepository userRepository, IFriendshipRepository friendshipRepository, IEmailService emailService, IAbpSession abpSession)
+        public TaskeverUserAppService(
+            ITaskeverUserRepository userRepository,
+            IFriendshipRepository friendshipRepository,
+            IEmailService emailService,
+            IAbpSession abpSession,
+            IObjectMapper objectMapper)
         {
             _userRepository = userRepository;
             _friendshipRepository = friendshipRepository;
             _emailService = emailService;
             _abpSession = abpSession;
+            _objectMapper = objectMapper;
         }
 
         public GetUserProfileOutput GetUserProfile(GetUserProfileInput input)
@@ -44,16 +52,16 @@ namespace Taskever.Users
                 var friendship = _friendshipRepository.GetOrNull(currentUser.Id, input.UserId);
                 if (friendship == null)
                 {
-                    return new GetUserProfileOutput { CanNotSeeTheProfile = true, User = profileUser.MapTo<UserDto>() }; //TODO: Is it true to send user informations?
+                    return new GetUserProfileOutput { CanNotSeeTheProfile = true, User = _objectMapper.Map<UserDto>(profileUser) }; //TODO: Is it true to send user informations?
                 }
 
                 if (friendship.Status != FriendshipStatus.Accepted)
                 {
-                    return new GetUserProfileOutput { CanNotSeeTheProfile = true, SentFriendshipRequest = true, User = profileUser.MapTo<UserDto>() };
+                    return new GetUserProfileOutput { CanNotSeeTheProfile = true, SentFriendshipRequest = true, User = _objectMapper.Map<UserDto>(profileUser) };
                 }
             }
 
-            return new GetUserProfileOutput { User = profileUser.MapTo<UserDto>() };
+            return new GetUserProfileOutput { User = _objectMapper.Map<UserDto>(profileUser) };
         }
 
         public ChangeProfileImageOutput ChangeProfileImage(ChangeProfileImageInput input)
@@ -69,19 +77,19 @@ namespace Taskever.Users
 
         public IList<UserDto> GetAllUsers()
         {
-            return _userRepository.GetAllList().MapIList<TaskeverUser, UserDto>();
+            return _userRepository.GetAllList().Select(x => _objectMapper.Map<UserDto>(x)).ToList();
         }
 
         public UserDto GetActiveUserOrNull(string emailAddress, string password) //TODO: Make this GetUserOrNullInput and GetUserOrNullOutput
         {
             var userEntity = _userRepository.FirstOrDefault(user => user.EmailAddress == emailAddress && user.Password == password && user.IsEmailConfirmed);
-            return userEntity.MapTo<UserDto>();
+            return _objectMapper.Map<UserDto>(userEntity);
         }
 
         public GetUserOutput GetUser(GetUserInput input)
         {
             var user = _userRepository.Get(input.UserId);
-            return new GetUserOutput(user.MapTo<UserDto>());
+            return new GetUserOutput(_objectMapper.Map<UserDto>(user));
         }
 
         public void RegisterUser(RegisterUserInput registerUser)
@@ -98,8 +106,8 @@ namespace Taskever.Users
                 throw new UserFriendlyException("There is already a user with this email address (" + registerUser.EmailAddress + ")! Select another email address!");
             }
 
-            var userEntity = registerUser.MapTo<TaskeverUser>();
-            userEntity.Password = new PasswordHasher().HashPassword(userEntity.Password);
+            var userEntity = _objectMapper.Map<TaskeverUser>(registerUser);
+            userEntity.Password = (new PasswordHasher()).HashPassword(userEntity.Password);
             userEntity.SetNewEmailConfirmationCode();
             _userRepository.Insert(userEntity);
             SendConfirmationEmail(userEntity);
@@ -124,7 +132,8 @@ namespace Taskever.Users
         public GetCurrentUserInfoOutput GetCurrentUserInfo(GetCurrentUserInfoInput input)
         {
             //TODO: Use GetUser?
-            return new GetCurrentUserInfoOutput { User = _userRepository.Get(_abpSession.UserId.Value).MapTo<UserDto>() };
+            var user = _userRepository.Get(_abpSession.UserId.Value);
+            return new GetCurrentUserInfoOutput { User = _objectMapper.Map<UserDto>(user) };
         }
 
         public void ChangePassword(ChangePasswordInput input)

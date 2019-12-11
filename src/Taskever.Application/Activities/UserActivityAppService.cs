@@ -1,4 +1,5 @@
-using Abp.Mapping;
+using System.Linq;
+using Abp.ObjectMapping;
 using Abp.Runtime.Session;
 using Abp.UI;
 using Taskever.Activities.Dto;
@@ -13,13 +14,20 @@ namespace Taskever.Activities
         private readonly IUserFollowedActivityRepository _followedActivityRepository;
         private readonly IFriendshipDomainService _friendshipDomainService;
         private readonly IAbpSession _abpSession;
+        private readonly IObjectMapper _objectMapper;
 
-        public UserActivityAppService(ITaskeverUserRepository userRepository, IUserFollowedActivityRepository followedActivityRepository, IFriendshipDomainService friendshipDomainService,IAbpSession abpSession)
+        public UserActivityAppService(
+            ITaskeverUserRepository userRepository,
+            IUserFollowedActivityRepository followedActivityRepository,
+            IFriendshipDomainService friendshipDomainService,
+            IAbpSession abpSession,
+            IObjectMapper objectMapper)
         {
             _userRepository = userRepository;
             _followedActivityRepository = followedActivityRepository;
             _friendshipDomainService = friendshipDomainService;
             _abpSession = abpSession;
+            _objectMapper = objectMapper;
         }
 
         public GetFollowedActivitiesOutput GetFollowedActivities(GetFollowedActivitiesInput input)
@@ -38,9 +46,9 @@ namespace Taskever.Activities
             var activities = _followedActivityRepository.Getactivities(input.UserId, input.IsActor, input.BeforeId, input.MaxResultCount);
 
             return new GetFollowedActivitiesOutput
-                       {
-                           Activities = activities.MapIList<UserFollowedActivity, UserFollowedActivityDto>()
-                       };
+            {
+                Activities = activities.Select(a => _objectMapper.Map<UserFollowedActivityDto>(a)).ToList()
+            };
         }
     }
 }

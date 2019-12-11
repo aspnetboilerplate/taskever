@@ -4,7 +4,7 @@ using Abp.Application.Services;
 using Abp.Collections.Extensions;
 using Abp.Events.Bus;
 using Abp.Events.Bus.Entities;
-using Abp.Mapping;
+using Abp.ObjectMapping;
 using Abp.UI;
 using Taskever.Security.Users;
 using Taskever.Tasks.Dto;
@@ -18,16 +18,19 @@ namespace Taskever.Tasks
         private readonly ITaskRepository _taskRepository;
         private readonly ITaskeverUserRepository _userRepository;
         private readonly IEventBus _eventBus;
+        private readonly IObjectMapper _objectMapper;
 
         public TaskAppService(
             ITaskPolicy taskPolicy,
             ITaskRepository taskRepository,
             ITaskeverUserRepository userRepository,
-            IEventBus eventBus)
+            IEventBus eventBus,
+            IObjectMapper objectMapper)
         {
             _taskRepository = taskRepository;
             _userRepository = userRepository;
             _eventBus = eventBus;
+            _objectMapper = objectMapper;
             _taskPolicy = taskPolicy;
         }
 
@@ -52,10 +55,10 @@ namespace Taskever.Tasks
             }
 
             return new GetTaskOutput
-                       {
-                           Task = task.MapTo<TaskWithAssignedUserDto>(),
-                           IsEditableByCurrentUser = _taskPolicy.CanUpdateTask(currentUser, task)
-                       };
+            {
+                Task = _objectMapper.Map<TaskWithAssignedUserDto>(task),
+                IsEditableByCurrentUser = _taskPolicy.CanUpdateTask(currentUser, task)
+            };
         }
 
         public virtual GetTasksOutput GetTasks(GetTasksInput input)
@@ -72,9 +75,9 @@ namespace Taskever.Tasks
                 .Take(input.MaxResultCount);
 
             return new GetTasksOutput
-                       {
-                           Tasks = query.ToList().MapIList<Task, TaskDto>()
-                       };
+            {
+                Tasks = query.ToList().Select(x => _objectMapper.Map<TaskDto>(x)).ToList()
+            };
         }
 
         public GetTasksByImportanceOutput GetTasksByImportance(GetTasksByImportanceInput input)
@@ -89,7 +92,7 @@ namespace Taskever.Tasks
 
             return new GetTasksByImportanceOutput
             {
-                Tasks = query.ToList().MapIList<Task, TaskDto>()
+                Tasks = query.ToList().Select(x => _objectMapper.Map<TaskDto>(x)).ToList()
             };
         }
 
@@ -106,7 +109,7 @@ namespace Taskever.Tasks
             }
 
             //Create the task
-            var taskEntity = input.Task.MapTo<Task>();
+            var taskEntity = _objectMapper.Map<Task>(input.Task);
 
             taskEntity.CreatorUserId = creatorUser.Id;
             taskEntity.AssignedUser = _userRepository.Load(input.Task.AssignedUserId);
@@ -119,14 +122,14 @@ namespace Taskever.Tasks
 
             _taskRepository.Insert(taskEntity);
 
-            Logger.Debug("Creaded " + taskEntity);
+            Logger.Debug("Created " + taskEntity);
 
-            _eventBus.Trigger( this, new EntityCreatedEventData<Task>(taskEntity));
+            _eventBus.Trigger(this, new EntityCreatedEventData<Task>(taskEntity));
 
             return new CreateTaskOutput
-                       {
-                           Task = taskEntity.MapTo<TaskDto>()
-                       };
+            {
+                Task = _objectMapper.Map<TaskDto>(taskEntity)
+            };
         }
 
         public void UpdateTask(UpdateTaskInput input)

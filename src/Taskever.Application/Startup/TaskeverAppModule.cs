@@ -11,8 +11,6 @@ namespace Taskever.Startup
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
-            TaskeverDtoMapper.Map();
-            UserDtosMapper.Map();
         }
     }
 }

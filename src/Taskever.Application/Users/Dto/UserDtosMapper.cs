@@ -1,15 +1,16 @@
-﻿using Taskever.Security.Users;
+﻿using AutoMapper;
+using Taskever.Security.Users;
 
 namespace Abp.Users.Dto
 {
-    public static class UserDtosMapper
+    public class UserDtosMapper : Profile
     {
-        public static void Map()
+        public UserDtosMapper()
         {
-            AutoMapper.Mapper.CreateMap<TaskeverUser, UserDto>()
+            CreateMap<TaskeverUser, UserDto>()
                 .ForMember(
                     user => user.ProfileImage,
-                    configuration => configuration.ResolveUsing(
+                    configuration => configuration.MapFrom(
                         user => user.ProfileImage == null
                                     //TODO: How to implement this?
                                     ? ""
@@ -17,9 +18,9 @@ namespace Abp.Users.Dto
                                          )
                 ).ReverseMap();
 
-            AutoMapper.Mapper.CreateMap<RegisterUserInput, TaskeverUser>();
+            CreateMap<RegisterUserInput, TaskeverUser>();
 
-            AutoMapper.Mapper.CreateMap<TaskeverUser, UserDto>().ReverseMap();
+            CreateMap<TaskeverUser, UserDto>().ReverseMap();
         }
     }
 }
