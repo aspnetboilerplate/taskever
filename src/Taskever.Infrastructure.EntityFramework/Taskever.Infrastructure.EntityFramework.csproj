@@ -221,9 +221,9 @@
     <Compile Include="Migrations\201909021231039_Initial_Migration.Designer.cs">
       <DependentUpon>201909021231039_Initial_Migration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201912110646595_Upgraded_To_Abp_5_1_0.cs" />
-    <Compile Include="Migrations\201912110646595_Upgraded_To_Abp_5_1_0.designer.cs">
-      <DependentUpon>201912110646595_Upgraded_To_Abp_5_1_0.cs</DependentUpon>
+    <Compile Include="Migrations\201912110818178_Upgraded_To_Abp_5_1_0.cs" />
+    <Compile Include="Migrations\201912110818178_Upgraded_To_Abp_5_1_0.designer.cs">
+      <DependentUpon>201912110818178_Upgraded_To_Abp_5_1_0.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -246,8 +246,8 @@
     <EmbeddedResource Include="Migrations\201909021231039_Initial_Migration.resx">
       <DependentUpon>201909021231039_Initial_Migration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912110646595_Upgraded_To_Abp_5_1_0.resx">
-      <DependentUpon>201912110646595_Upgraded_To_Abp_5_1_0.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201912110818178_Upgraded_To_Abp_5_1_0.resx">
+      <DependentUpon>201912110818178_Upgraded_To_Abp_5_1_0.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
