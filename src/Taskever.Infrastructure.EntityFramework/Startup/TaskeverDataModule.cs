@@ -3,7 +3,7 @@ using Abp.Modules;
 using Abp.Zero.EntityFramework;
 using Taskever.Startup;
 
-namespace Taskever.Infrastructure.EntityFramework.Startup
+namespace Taskever.Startup
 {
     [DependsOn(typeof(AbpZeroEntityFrameworkModule), typeof(TaskeverCoreModule))]
     public class TaskeverDataModule : AbpModule
