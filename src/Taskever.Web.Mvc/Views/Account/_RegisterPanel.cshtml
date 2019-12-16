@@ -1,4 +1,6 @@
-﻿<div class="panel panel-default">
+﻿@using Recaptcha.Web
+@using Recaptcha.Web.Mvc
+<div class="panel panel-default">
     <div class="panel-heading">
         <h3 class="panel-title">Register</h3>
     </div>
@@ -23,7 +25,7 @@
                 <input type="password" maxlength="30" name="PasswordRepeat" class="form-control" id="RegisterPasswordRepeat" placeholder="Password (repeat)" required>
             </div>
             <div class="form-group">
-                @Html.Recaptcha(theme: RecaptchaTheme.White)
+                @*@Html.Recaptcha(theme: RecaptchaTheme.White)*@
             </div>
             <button type="submit" class="btn btn-primary">Register</button>
         </form>

@@ -20,27 +20,24 @@ namespace Taskever.Utils.Mail
         public EmailService(ISettingManager settingManager)
         {
             _settingManager = settingManager;
-            //throw new NotImplementedException();
-           // Logger = NullLogger.Instance;
         }
 
         public void SendEmail(MailMessage mail)
         {
-            throw new NotImplementedException();
-            //try
-            //{
-            //    mail.From = new MailAddress(_settingManager.GetSettingValue("Abp.Net.Mail.SenderAddress"), _settingManager.GetSettingValue("Abp.Net.Mail.DisplayName"));
-            //    using (var client = new SmtpClient(_settingManager.GetSettingValue("Abp.Net.Mail.ServerAddress"), _settingManager.GetSettingValue<int>("Abp.Net.Mail.ServerPort")))
-            //    {
-            //        client.UseDefaultCredentials = false;
-            //        client.Credentials = new System.Net.NetworkCredential(_settingManager.GetSettingValue("Abp.Net.Mail.Username"), _settingManager.GetSettingValue("Abp.Net.Mail.Password"));
-            //        client.Send(mail);
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    Logger.wa("Could not send email!", ex);
-            //}
+            try
+            {
+                mail.From = new MailAddress(_settingManager.GetSettingValue("Abp.Net.Mail.SenderAddress"), _settingManager.GetSettingValue("Abp.Net.Mail.DisplayName"));
+                using (var client = new SmtpClient(_settingManager.GetSettingValue("Abp.Net.Mail.ServerAddress"), _settingManager.GetSettingValue<int>("Abp.Net.Mail.ServerPort")))
+                {
+                    client.UseDefaultCredentials = false;
+                    client.Credentials = new System.Net.NetworkCredential(_settingManager.GetSettingValue("Abp.Net.Mail.Username"), _settingManager.GetSettingValue("Abp.Net.Mail.Password"));
+                    client.Send(mail);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.Warn("Could not send email!", ex);
+            }
         }
     }
 }

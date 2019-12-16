@@ -1,6 +1,7 @@
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using Abp.Zero.EntityFramework;
+using Taskever.Activities;
 using Taskever.Friendships;
 using Taskever.Security.Roles;
 using Taskever.Security.Tenants;
@@ -9,7 +10,7 @@ using Taskever.Tasks;
 
 namespace Taskever.Infrastructure.EntityFramework.Data.Repositories.NHibernate
 {
-    public class TaskeverDbContext : AbpZeroDbContext<TaskeverTenant,TaskeverRole,TaskeverUser>
+    public class TaskeverDbContext : AbpZeroDbContext<TaskeverTenant, TaskeverRole, TaskeverUser>
     {
         public virtual IDbSet<Friendship> Friendships { get; set; }
         public virtual IDbSet<Task> Tasks { get; set; }
@@ -23,7 +24,7 @@ namespace Taskever.Infrastructure.EntityFramework.Data.Repositories.NHibernate
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+            //modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
 
             //TODO: Ignore base classes
 
@@ -46,17 +47,15 @@ namespace Taskever.Infrastructure.EntityFramework.Data.Repositories.NHibernate
             //modelBuilder.Ignore<TaskeverUser>();
             //modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
 
-            //modelBuilder.Entity<TaskeverUser>().ToTable("AbpUsers");
-            //modelBuilder.Entity<Activity>().ToTable("TeActivities")
-            //    .Map<CreateTaskActivity>(m => m.Requires("ActivityType").HasValue(1))
-            //    .Map<CompleteTaskActivity>(m => m.Requires("ActivityType").HasValue(2));
+            modelBuilder.Entity<TaskeverUser>().ToTable("AbpUsers");
+            modelBuilder.Entity<Activity>().ToTable("TeActivities")
+                .Map<CreateTaskActivity>(m => m.Requires("ActivityType").HasValue(1))
+                .Map<CompleteTaskActivity>(m => m.Requires("ActivityType").HasValue(2));
 
-            ////modelBuilder.Entity<CompleteTaskActivity>()
-            //modelBuilder.Entity<Friendship>().ToTable("TeFriendships");
-            //modelBuilder.Entity<Task>().ToTable("TeTasks");
-            //modelBuilder.Entity<UserFollowedActivity>().ToTable("TeUserFollowedActivities");
-
-
+            //modelBuilder.Entity<CompleteTaskActivity>()
+            modelBuilder.Entity<Friendship>().ToTable("TeFriendships");
+            modelBuilder.Entity<Task>().ToTable("TeTasks");
+            modelBuilder.Entity<UserFollowedActivity>().ToTable("TeUserFollowedActivities");
         }
     }
 }

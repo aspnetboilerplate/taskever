@@ -8,21 +8,21 @@ using Taskever.Tasks.Dto;
 
 namespace Taskever.Mapping
 {
-    public class TaskeverDtoMapper : Profile
+    public class TaskeverDtoMapper
     {
-        public TaskeverDtoMapper()
+        public void Map(IMapperConfigurationExpression cfg)
         {
             //TODO: Check unnecessary ReverseMaps
-            CreateMap<Task, TaskDto>().ReverseMap();
-            CreateMap<Task, TaskWithAssignedUserDto>().ReverseMap();
-            CreateMap<Friendship, FriendshipDto>().ReverseMap();
+            cfg.CreateMap<Task, TaskDto>().ReverseMap();
+            cfg.CreateMap<Task, TaskWithAssignedUserDto>().ReverseMap();
+            cfg.CreateMap<Friendship, FriendshipDto>().ReverseMap();
 
-            CreateMap<Activity, ActivityDto>()
+            cfg.CreateMap<Activity, ActivityDto>()
                   .Include<CreateTaskActivity, CreateTaskActivityDto>()
                   .Include<CompleteTaskActivity, CompleteTaskActivityDto>();
-            CreateMap<CreateTaskActivity, CreateTaskActivityDto>().ForMember(t => t.ActivityType, tt => tt.MapFrom(x => 1));
-            CreateMap<CompleteTaskActivity, CompleteTaskActivityDto>().ForMember(t => t.ActivityType, tt => tt.MapFrom(x => 2));
-            CreateMap<UserFollowedActivity, UserFollowedActivityDto>();
+            cfg.CreateMap<CreateTaskActivity, CreateTaskActivityDto>().ForMember(t => t.ActivityType, tt => tt.MapFrom(x => 1));
+            cfg.CreateMap<CompleteTaskActivity, CompleteTaskActivityDto>().ForMember(t => t.ActivityType, tt => tt.MapFrom(x => 2));
+            cfg.CreateMap<UserFollowedActivity, UserFollowedActivityDto>();
         }
     }
 }

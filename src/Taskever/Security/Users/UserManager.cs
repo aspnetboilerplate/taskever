@@ -8,6 +8,8 @@ using Abp.IdentityFramework;
 using Abp.Localization;
 using Abp.Organizations;
 using Abp.Runtime.Caching;
+using Taskever.Authorization.Roles;
+using Taskever.Authorization.Users;
 using Taskever.Security.Roles;
 using Taskever.Security.Users;
 
@@ -15,7 +17,20 @@ namespace Taskever.Users
 {
     public class UserManager : AbpUserManager<TaskeverRole, TaskeverUser>
     {
-        public UserManager(AbpUserStore<TaskeverRole, TaskeverUser> userStore, AbpRoleManager<TaskeverRole, TaskeverUser> roleManager, IPermissionManager permissionManager, IUnitOfWorkManager unitOfWorkManager, ICacheManager cacheManager, IRepository<OrganizationUnit, long> organizationUnitRepository, IRepository<UserOrganizationUnit, long> userOrganizationUnitRepository, IOrganizationUnitSettings organizationUnitSettings, ILocalizationManager localizationManager, IdentityEmailMessageService emailService, ISettingManager settingManager, IUserTokenProviderAccessor userTokenProviderAccessor) : base(userStore, roleManager, permissionManager, unitOfWorkManager, cacheManager, organizationUnitRepository, userOrganizationUnitRepository, organizationUnitSettings, localizationManager, emailService, settingManager, userTokenProviderAccessor)
+        public UserManager(
+            UserStore userStore,
+            RoleManager roleManager,
+            IPermissionManager permissionManager,
+            IUnitOfWorkManager unitOfWorkManager,
+            ICacheManager cacheManager,
+            IRepository<OrganizationUnit, long> organizationUnitRepository,
+            IRepository<UserOrganizationUnit, long> userOrganizationUnitRepository,
+            IOrganizationUnitSettings organizationUnitSettings,
+            ILocalizationManager localizationManager,
+            IdentityEmailMessageService emailService,
+            ISettingManager settingManager,
+            IUserTokenProviderAccessor userTokenProviderAccessor) 
+            : base(userStore, roleManager, permissionManager, unitOfWorkManager, cacheManager, organizationUnitRepository, userOrganizationUnitRepository, organizationUnitSettings, localizationManager, emailService, settingManager, userTokenProviderAccessor)
         {
         }
     }

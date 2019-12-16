@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Abp.Collections.Extensions;
+using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Castle.Core.Logging;
 using Taskever.Friendships;
@@ -12,7 +13,7 @@ namespace Taskever.Activities
     {
         private readonly ITaskeverUserRepository _userRepository;
         private readonly IFriendshipRepository _friendshipRepository;
-        private readonly IActivityRepository _activityRepository;
+        private readonly IRepository<Activity, long> _activityRepository;
         private readonly IUserFollowedActivityRepository _userFollowedActivityRepository;
 
         public ILogger Logger { get; set; }
@@ -20,7 +21,7 @@ namespace Taskever.Activities
         public ActivityService(
             ITaskeverUserRepository userRepository,
             IFriendshipRepository friendshipRepository,
-            IActivityRepository activityRepository,
+            IRepository<Activity, long> activityRepository,
             IUserFollowedActivityRepository userFollowedActivityRepository)
         {
             _userRepository = userRepository;

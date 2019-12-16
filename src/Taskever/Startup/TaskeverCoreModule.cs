@@ -11,6 +11,7 @@ using Taskever.Utils.Mail;
 namespace Taskever.Startup
 {
     [DependsOn(typeof(AbpZeroCoreModule))]
+
     public class TaskeverCoreModule : AbpModule
     {
         public override void PreInitialize()

@@ -36,6 +36,9 @@
     <Reference Include="Abp, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Abp.5.0.0\lib\netstandard2.0\Abp.dll</HintPath>
     </Reference>
+    <Reference Include="Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.AutoMapper.5.0.0\lib\netstandard2.0\Abp.AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Abp.Castle.Log4Net, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Abp.Castle.Log4Net.5.0.0\lib\netstandard2.0\Abp.Castle.Log4Net.dll</HintPath>
     </Reference>
@@ -44,6 +47,12 @@
     </Reference>
     <Reference Include="Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Abp.Zero.Common.5.0.0\lib\netstandard2.0\Abp.Zero.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper, Version=9.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.9.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Collection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=e57c3f0a3d6646db, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.Collection.5.0.0\lib\net461\AutoMapper.Collection.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Core.4.4.0\lib\net45\Castle.Core.dll</HintPath>
@@ -191,6 +200,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppConsts.cs" />
+    <Compile Include="Authorization\LogInManager.cs" />
+    <Compile Include="Authorization\Roles\RoleManager.cs" />
+    <Compile Include="Authorization\Roles\RoleStore.cs" />
+    <Compile Include="Authorization\Users\UserStore.cs" />
     <Compile Include="Security\Roles\ITaskeverRoleRepository.cs" />
     <Compile Include="Security\Roles\TaskeverRole.cs" />
     <Compile Include="Security\Tenants\TaskeverTenant.cs" />

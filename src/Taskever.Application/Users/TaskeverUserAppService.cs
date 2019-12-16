@@ -100,7 +100,7 @@ namespace Taskever.Users
                 if (!existingUser.IsEmailConfirmed)
                 {
                     SendConfirmationEmail(existingUser);
-                    throw new UserFriendlyException("You registere with this email address before (" + registerUser.EmailAddress + ")! We re-sent an activation code to your email!");
+                    throw new UserFriendlyException("You registered with this email address before (" + registerUser.EmailAddress + ")! We re-sent an activation code to your email!");
                 }
 
                 throw new UserFriendlyException("There is already a user with this email address (" + registerUser.EmailAddress + ")! Select another email address!");
@@ -109,6 +109,8 @@ namespace Taskever.Users
             var userEntity = _objectMapper.Map<TaskeverUser>(registerUser);
             userEntity.Password = (new PasswordHasher()).HashPassword(userEntity.Password);
             userEntity.SetNewEmailConfirmationCode();
+            userEntity.NormalizedUserName = userEntity.UserName.ToUpperInvariant();
+            userEntity.NormalizedEmailAddress = userEntity.EmailAddress.ToUpperInvariant();
             _userRepository.Insert(userEntity);
             SendConfirmationEmail(userEntity);
         }

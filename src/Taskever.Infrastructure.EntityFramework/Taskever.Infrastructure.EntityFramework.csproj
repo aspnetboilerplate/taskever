@@ -226,6 +226,7 @@
       <DependentUpon>201912110818178_Upgraded_To_Abp_5_1_0.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\SeedData\DefaultTenantRoleAndUserBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup\TaskeverDataModule.cs" />
   </ItemGroup>

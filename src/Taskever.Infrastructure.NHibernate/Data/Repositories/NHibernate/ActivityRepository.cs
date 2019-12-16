@@ -4,10 +4,10 @@ using Taskever.Activities;
 
 namespace Taskever.Data.Repositories.NHibernate
 {
-    public class ActivityRepository : NhRepositoryBase<Activity, long>, IActivityRepository
-    {
-        public ActivityRepository(ISessionProvider sessionProvider) : base(sessionProvider)
-        {
-        }
-    }
+    //public class ActivityRepository : NhRepositoryBase<Activity, long>, IActivityRepository
+    //{
+    //    public ActivityRepository(ISessionProvider sessionProvider) : base(sessionProvider)
+    //    {
+    //    }
+    //}
 }

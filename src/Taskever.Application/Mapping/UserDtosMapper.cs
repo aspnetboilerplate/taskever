@@ -1,13 +1,14 @@
-﻿using AutoMapper;
+﻿using Abp.Users.Dto;
+using AutoMapper;
 using Taskever.Security.Users;
 
-namespace Abp.Users.Dto
+namespace Taskever.Mapping
 {
-    public class UserDtosMapper : Profile
+    public class UserDtosMapper
     {
-        public UserDtosMapper()
+        public void Map(IMapperConfigurationExpression cfg)
         {
-            CreateMap<TaskeverUser, UserDto>()
+            cfg.CreateMap<TaskeverUser, UserDto>()
                 .ForMember(
                     user => user.ProfileImage,
                     configuration => configuration.MapFrom(
@@ -18,9 +19,8 @@ namespace Abp.Users.Dto
                                          )
                 ).ReverseMap();
 
-            CreateMap<RegisterUserInput, TaskeverUser>();
-
-            CreateMap<TaskeverUser, UserDto>().ReverseMap();
+            cfg.CreateMap<RegisterUserInput, TaskeverUser>();
+            cfg.CreateMap<TaskeverUser, UserDto>().ReverseMap();
         }
     }
 }

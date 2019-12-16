@@ -1,7 +1,7 @@
 ﻿using System;
-using Abp.Dependency;
 using Abp.Web;
 using Castle.Facilities.Logging;
+using Abp.Castle.Logging.Log4Net;
 
 namespace Taskever.Web.Mvc
 {
@@ -9,7 +9,10 @@ namespace Taskever.Web.Mvc
     {
         protected override void Application_Start(object sender, EventArgs e)
         {
-            IocManager.Instance.IocContainer.AddFacility<LoggingFacility>(f => f.UseLog4Net().WithConfig("log4net.config"));
+            AbpBootstrapper.IocManager.IocContainer.AddFacility<LoggingFacility>(
+                f => f.UseAbpLog4Net().WithConfig(Server.MapPath("log4net.config"))
+            );
+
             base.Application_Start(sender, e);
         }
     }

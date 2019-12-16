@@ -1,3 +1,5 @@
+using Taskever.Infrastructure.EntityFramework.Migrations.SeedData;
+
 namespace Taskever.Infrastructure.EntityFramework.Migrations
 {
     using System.Data.Entity.Migrations;
@@ -23,6 +25,7 @@ namespace Taskever.Infrastructure.EntityFramework.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            new DefaultTenantRoleAndUserBuilder(context).Build();
         }
     }
 }

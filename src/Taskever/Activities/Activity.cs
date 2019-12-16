@@ -9,16 +9,17 @@ namespace Taskever.Activities
 {
     public abstract class Activity : Entity<long>, IHasCreationTime
     {
-        //public virtual ActivityType ActivityType { get; set; }
+        public virtual ActivityType ActivityType { get; set; }
 
         [ForeignKey("AssignedUserId")]
         public virtual TaskeverUser AssignedUser { get; set; }
+
         public virtual long AssignedUserId { get; set; }
 
         [ForeignKey("TaskId")]
         public virtual Task Task { get; set; }
-        public virtual int TaskId { get; set; }
 
+        public virtual int TaskId { get; set; }
 
         public virtual DateTime CreationTime { get; set; }
 

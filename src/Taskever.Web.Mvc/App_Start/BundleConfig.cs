@@ -36,7 +36,7 @@ namespace Taskever.Web.Mvc
                     .Include("~/Scripts/json2.min.js")
                     .Include("~/Scripts/jquery-2.1.1.min.js") //TODO: Use with {version} and minimized
                     .Include("~/Scripts/underscore.min.js")
-                    .Include("~/Scripts/knockout-3.2.0.js") //TODO: Use with {version} and minimized
+                    .Include("~/Scripts/knockout-3.4.0.js") //TODO: Use with {version} and minimized
                     .Include("~/Scripts/knockout.mapping-latest.js")
                     .Include("~/Scripts/bootstrap.min.js")
                     .Include("~/Scripts/jquery.validate.min.js")

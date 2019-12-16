@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using Abp.Timing
+@using Abp.Web.Mvc.Extensions
+@{
+    SetAntiForgeryCookie();
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -18,7 +23,7 @@
     <link rel="apple-touch-icon" href="~/Content/images/icon.png" />
 
     <title>@ViewBag.Title</title>
-    
+
     <script>
     //This is used to get the application's root path from javascript. It's useful if you're running application in a virtual directory under IIS.
     var abp = abp || {};
@@ -33,14 +38,16 @@
       <script src="@Url.Content("~/Scripts/libs/respond.min.js")"></script>
     <![endif]-->
 
-    @RenderSection("styles", required: false)    
+    @RenderSection("styles", required: false)
 
     @Html.IncludeScript("~/Abp/Framework/scripts/utils/ie10fix.js")
     @Scripts.Render("~/scripts/modernizr")
 </head>
 <body>
     @RenderBody()
-    
+
+
+
     @Scripts.Render("~/scripts/baselibs")
 
     <script src="~/Scripts/libs/spinjs/spin.js"></script>
@@ -48,20 +55,24 @@
     <script src="~/Scripts/libs/spinjs/jquery.spin.js"></script>
 
     @Scripts.Render("~/scripts/abp")
+
+    <script src="~/api/AbpServiceProxies/GetAll?v=@(Clock.Now.Ticks)"></script>
+    <script src="~/AbpScripts/GetScripts?v=@(Clock.Now.Ticks)" type="text/javascript"></script>
+
     @Scripts.Render("~/scripts/taskever")
-    <script src="~/AbpLocalization/GetScripts" type="text/javascript"></script>
-    <script src="~/AbpAuthorization/GetScripts" type="text/javascript"></script>
-    <script src="~/AbpSettings/GetScripts" type="text/javascript"></script>
+
+
+
     <!-- TODO: Find a better way! -->
     @RenderSection("scripts", required: false)
-    
+
     <script type="text/javascript">
 
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-22169554-4']);
         _gaq.push(['_trackPageview']);
 
-        (function() {
+        (function () {
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);

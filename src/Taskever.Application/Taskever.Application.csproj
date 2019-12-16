@@ -198,12 +198,12 @@
     <Compile Include="Activities\Dto\CreateTaskActivityDto.cs" />
     <Compile Include="Activities\Dto\UserFollowedActivityDto.cs" />
     <Compile Include="Authorization\TaskeverPermissions.cs" />
+    <Compile Include="Mapping\TaskeverDtoMapper.cs" />
     <Compile Include="Tasks\Dto\DeleteTaskInput.cs" />
     <Compile Include="Friendships\Dto\AcceptFriendshipInput.cs" />
     <Compile Include="Friendships\Dto\CancelFriendshipRequestInput.cs" />
     <Compile Include="Friendships\Dto\ChangeFriendshipPropertiesInput.cs" />
     <Compile Include="Activities\Dto\ActivityDto.cs" />
-    <Compile Include="Mapping\TaskeverDtoMapper.cs" />
     <Compile Include="Friendships\Dto\FriendshipDto.cs" />
     <Compile Include="Friendships\Dto\RejectFriendshipInput.cs" />
     <Compile Include="Tasks\Dto\CreateTaskOutput.cs" />
@@ -241,7 +241,7 @@
     <Compile Include="Users\Dto\ResetPasswordInput.cs" />
     <Compile Include="Users\Dto\SendPasswordResetLinkInput.cs" />
     <Compile Include="Users\Dto\UserDto.cs" />
-    <Compile Include="Users\Dto\UserDtosMapper.cs" />
+    <Compile Include="Mapping\UserDtosMapper.cs" />
     <Compile Include="Users\ITaskeverUserAppService.cs" />
     <Compile Include="Tasks\ITaskAppService.cs" />
     <Compile Include="Activities\IUserActivityAppService.cs" />
