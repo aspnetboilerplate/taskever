@@ -174,4 +174,4 @@ UpgradeLog*.htm
 FakesAssemblies/
 
 src/.vs
-src/Taskever.Web.Mvc/Logs/TaskeverLogs.txt
+src/Taskever.Web.Mvc/Logs/
