@@ -1,7 +1,7 @@
 ﻿var taskever = taskever || { };
 (function () {
 
-    var localize = abp.localization.getSource('taskever');
+    var localize = abp.localization.getSource('Taskever');
     
     //TASK PRIORITY
     taskever.taskPriority = {

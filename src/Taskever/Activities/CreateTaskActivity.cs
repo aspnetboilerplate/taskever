@@ -17,7 +17,7 @@ namespace Taskever.Activities
 
         public override long?[] GetActors()
         {
-            return new long?[] { CreatorUser.Id, AssignedUser.Id };
+            return new long?[] { CreatorUserId, AssignedUserId };
         }
 
         public override long?[] GetRelatedUsers()

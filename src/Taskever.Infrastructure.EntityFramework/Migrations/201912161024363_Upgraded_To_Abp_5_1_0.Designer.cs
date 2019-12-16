@@ -13,7 +13,7 @@ namespace Taskever.Infrastructure.EntityFramework.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201912110818178_Upgraded_To_Abp_5_1_0"; }
+            get { return "201912161024363_Upgraded_To_Abp_5_1_0"; }
         }
         
         string IMigrationMetadata.Source

@@ -1,9 +1,10 @@
 
+using System;
+
 namespace Taskever.Activities
 {
     public class CompleteTaskActivity : Activity
     {
-
         public CompleteTaskActivity()
         {
             //ActivityType = ActivityType.CompleteTask;            
@@ -11,12 +12,16 @@ namespace Taskever.Activities
 
         public override long?[] GetActors()
         {
-            return new[] { (long?)AssignedUser.Id };
+            return new[] { (long?)AssignedUserId };
         }
 
         public override long?[] GetRelatedUsers()
         {
-            return new[] {Task.CreatorUserId};
+            if (Task == null)
+            {
+                throw new ArgumentNullException("Task can not be null. Include Task to call GetRelatedUsers method");
+            }
+            return new[] { Task.CreatorUserId };
         }
     }
 }

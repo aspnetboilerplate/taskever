@@ -120,11 +120,9 @@ namespace Taskever.Tasks
                 throw new ApplicationException("A user can not assign a private task to another user!");
             }
 
-            _taskRepository.Insert(taskEntity);
+            _taskRepository.InsertAndGetId(taskEntity);
 
             Logger.Debug("Created " + taskEntity);
-
-            _eventBus.Trigger(this, new EntityCreatedEventData<Task>(taskEntity));
 
             return new CreateTaskOutput
             {

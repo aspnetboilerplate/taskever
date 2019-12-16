@@ -9,6 +9,7 @@
         {
             RenameTable(name: "dbo.Friendships", newName: "TeFriendships");
             RenameTable(name: "dbo.Tasks", newName: "TeTasks");
+            DropIndex("dbo.AbpBackgroundJobs", new[] { "IsAbandoned", "NextTryTime" });
             CreateTable(
                 "dbo.TeActivities",
                 c => new
@@ -33,34 +34,41 @@
                 c => new
                     {
                         Id = c.Long(nullable: false, identity: true),
+                        UserId = c.Long(nullable: false),
+                        ActivityId = c.Long(nullable: false),
                         IsActor = c.Boolean(nullable: false),
                         IsRelated = c.Boolean(nullable: false),
                         CreationTime = c.DateTime(nullable: false),
-                        Activity_Id = c.Long(),
-                        User_Id = c.Long(),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.TeActivities", t => t.Activity_Id)
-                .ForeignKey("dbo.AbpUsers", t => t.User_Id)
-                .Index(t => t.Activity_Id)
-                .Index(t => t.User_Id);
+                .ForeignKey("dbo.TeActivities", t => t.ActivityId)
+                .ForeignKey("dbo.AbpUsers", t => t.UserId)
+                .Index(t => t.UserId)
+                .Index(t => t.ActivityId);
             
+            CreateIndex("dbo.AbpSettings", "TenantId");
+            CreateIndex("dbo.AbpBackgroundJobs", new[] { "Priority", "TryCount", "NextTryTime" });
+            CreateIndex("dbo.AbpBackgroundJobs", "IsAbandoned", name: "IX_IsAbandoned_NextTryTime");
         }
         
         public override void Down()
         {
-            DropForeignKey("dbo.TeUserFollowedActivities", "User_Id", "dbo.AbpUsers");
-            DropForeignKey("dbo.TeUserFollowedActivities", "Activity_Id", "dbo.TeActivities");
+            DropForeignKey("dbo.TeUserFollowedActivities", "UserId", "dbo.AbpUsers");
+            DropForeignKey("dbo.TeUserFollowedActivities", "ActivityId", "dbo.TeActivities");
             DropForeignKey("dbo.TeActivities", "CreatorUserId", "dbo.AbpUsers");
             DropForeignKey("dbo.TeActivities", "TaskId", "dbo.TeTasks");
             DropForeignKey("dbo.TeActivities", "AssignedUserId", "dbo.AbpUsers");
-            DropIndex("dbo.TeUserFollowedActivities", new[] { "User_Id" });
-            DropIndex("dbo.TeUserFollowedActivities", new[] { "Activity_Id" });
+            DropIndex("dbo.TeUserFollowedActivities", new[] { "ActivityId" });
+            DropIndex("dbo.TeUserFollowedActivities", new[] { "UserId" });
+            DropIndex("dbo.AbpBackgroundJobs", "IX_IsAbandoned_NextTryTime");
+            DropIndex("dbo.AbpBackgroundJobs", new[] { "Priority", "TryCount", "NextTryTime" });
+            DropIndex("dbo.AbpSettings", new[] { "TenantId" });
             DropIndex("dbo.TeActivities", new[] { "CreatorUserId" });
             DropIndex("dbo.TeActivities", new[] { "TaskId" });
             DropIndex("dbo.TeActivities", new[] { "AssignedUserId" });
             DropTable("dbo.TeUserFollowedActivities");
             DropTable("dbo.TeActivities");
+            CreateIndex("dbo.AbpBackgroundJobs", new[] { "IsAbandoned", "NextTryTime" });
             RenameTable(name: "dbo.TeTasks", newName: "Tasks");
             RenameTable(name: "dbo.TeFriendships", newName: "Friendships");
         }

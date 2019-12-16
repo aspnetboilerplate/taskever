@@ -12,7 +12,7 @@ namespace Taskever.Data.Repositories.NHibernate
         {
         }
 
-        public IList<UserFollowedActivity> Getactivities(long userId, bool? isActor, long beforeId, int maxResultCount)
+        public IList<UserFollowedActivity> Getactivities(long userId, bool? isActor, long? beforeId, int maxResultCount)
         {
             var queryBuilder = new StringBuilder();
             queryBuilder.AppendLine("from " + typeof(UserFollowedActivity).FullName + " as ufa");
@@ -31,8 +31,12 @@ namespace Taskever.Data.Repositories.NHibernate
 
             var query = Session
                 .CreateQuery(queryBuilder.ToString())
-                .SetParameter("userId", userId)
-                .SetParameter("beforeId", beforeId);
+                .SetParameter("userId", userId);
+
+            if (beforeId.HasValue && beforeId != 0)
+            {
+                query = query.SetParameter("beforeId", beforeId);
+            }
 
             if (isActor.HasValue)
             {

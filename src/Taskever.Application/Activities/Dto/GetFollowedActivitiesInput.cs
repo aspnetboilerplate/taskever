@@ -3,7 +3,8 @@ using Abp.Application.Services.Dto;
 
 namespace Taskever.Activities.Dto
 {
-    public class GetFollowedActivitiesInput : ILimitedResultRequest
+    public class 
+        GetFollowedActivitiesInput : ILimitedResultRequest
     {
         private const int MaxMaxResultCount = 100;
 
@@ -13,7 +14,7 @@ namespace Taskever.Activities.Dto
         public bool? IsActor { get; set; }
 
         [Range(1, long.MaxValue)]
-        public long BeforeId { get; set; }
+        public long? BeforeId { get; set; }
 
         [Range(1, MaxMaxResultCount)]
         public int MaxResultCount { get; set; }

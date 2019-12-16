@@ -35,26 +35,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Abp, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Abp.5.0.0\lib\netstandard2.0\Abp.dll</HintPath>
+    <Reference Include="Abp, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.5.1.0\lib\netstandard2.0\Abp.dll</HintPath>
     </Reference>
-    <Reference Include="Abp.Dapper, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Abp.Dapper.5.0.0\lib\netstandard2.0\Abp.Dapper.dll</HintPath>
+    <Reference Include="Abp.Dapper, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.Dapper.5.1.0\lib\netstandard2.0\Abp.Dapper.dll</HintPath>
     </Reference>
-    <Reference Include="Abp.FluentMigrator, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Abp.FluentMigrator.5.0.0\lib\net461\Abp.FluentMigrator.dll</HintPath>
+    <Reference Include="Abp.FluentMigrator, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.FluentMigrator.5.1.0\lib\net461\Abp.FluentMigrator.dll</HintPath>
     </Reference>
-    <Reference Include="Abp.NHibernate, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Abp.NHibernate.5.0.0\lib\netstandard2.0\Abp.NHibernate.dll</HintPath>
+    <Reference Include="Abp.NHibernate, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.NHibernate.5.1.0\lib\netstandard2.0\Abp.NHibernate.dll</HintPath>
     </Reference>
-    <Reference Include="Abp.Zero, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Abp.Zero.5.0.0\lib\net461\Abp.Zero.dll</HintPath>
+    <Reference Include="Abp.Zero, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.Zero.5.1.0\lib\net461\Abp.Zero.dll</HintPath>
     </Reference>
-    <Reference Include="Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Abp.Zero.Common.5.0.0\lib\netstandard2.0\Abp.Zero.Common.dll</HintPath>
+    <Reference Include="Abp.Zero.Common, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.Zero.Common.5.1.0\lib\netstandard2.0\Abp.Zero.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Abp.Zero.NHibernate, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Abp.Zero.NHibernate.5.0.0\lib\net461\Abp.Zero.NHibernate.dll</HintPath>
+    <Reference Include="Abp.Zero.NHibernate, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.Zero.NHibernate.5.1.0\lib\net461\Abp.Zero.NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
